@@ -10,6 +10,10 @@
       name="description"
       content="Totality is a simple CSS frameowrk to kick start your frontend project"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
@@ -90,5 +94,34 @@
       src="https://robohash.org/127539fe860f082d7fb9e34dbf58d4ed?set=set4&bgset=bg1&size=400x400"
       alt="avatar"
     />
+
+    <hr />
+    <h1>Badge</h1>
+    <hr />
+
+    <figure class="has-badge">
+      <img
+        class="avatar"
+        src="https://robohash.org/127539fe860f082d7fb9e34dbf58d4ed?set=set4&bgset=bg1&size=400x400"
+        alt="avatar"
+      />
+      <span class="badge has-bg-warning is-bottom-right">10</span>
+    </figure>
+
+    <div class="has-badge">
+      <i class="fas fa-shopping-cart fa-3x"></i>
+      <span class="badge has-bg-primary is-top-right">10</span>
+    </div>
+
+    <figure class="has-badge">
+      <img
+        class="avatar is-rounded"
+        src="https://robohash.org/127539fe860f082d7fb9e34dbf58d4ed?set=set4&bgset=bg1&size=400x400"
+        alt="avatar"
+      />
+      <span class="badge has-bg-secondary is-bottom-right">10</span>
+    </figure>
+
+    <button>Badge in button <span class="badge">10</span></button>
   </body>
 </html>

@@ -20,21 +20,20 @@
   --t-font-family: "'Montserrat', sans-serif";
 
   /* Font Size */
-  --t-font-size: 62.5%; /* 10px: so our rems are easy to calculate */
-  --t-font-size-xsm: calc(1 * var(--t-font-size-multiplier)); /* 8px */
-  --t-font-size-sm: calc(2 * var(--t-font-size-multiplier)); /* 16px */
-  --t-font-size-md: calc(3 * var(--t-font-size-multiplier)); /* 24px */
-  --t-font-size-lg: calc(4 * var(--t-font-size-multiplier)); /* 32px */
-  --t-font-size-xlg: calc(5 * var(--t-font-size-multiplier)); /* 40px */
-  --t-font-size-xxlg: calc(6 * var(--t-font-size-multiplier)); /* 48px */
+  --t-font-size-xsm: calc(0.5 * var(--t-font-size-multiplier)); /* 8px */
+  --t-font-size-sm: calc(1 * var(--t-font-size-multiplier)); /* 16px */
+  --t-font-size-md: calc(1.5 * var(--t-font-size-multiplier)); /* 24px */
+  --t-font-size-lg: calc(2 * var(--t-font-size-multiplier)); /* 32px */
+  --t-font-size-xlg: calc(2.5 * var(--t-font-size-multiplier)); /* 40px */
+  --t-font-size-xxlg: calc(3 * var(--t-font-size-multiplier)); /* 48px */
 
   /* Line Height */
-  --t-line-height-xsm: calc(1 * var(--t-line-height-multiplier)); /* 8px */
-  --t-line-height-sm: calc(2 * var(--t-line-height-multiplier)); /* 16px */
-  --t-line-height-md: calc(3 * var(--t-line-height-multiplier)); /* 24px */
-  --t-line-height-lg: calc(4 * var(--t-line-height-multiplier)); /* 32px */
-  --t-line-height-xlg: calc(5 * var(--t-line-height-multiplier)); /* 40px */
-  --t-line-height-xxlg: calc(8 * var(--t-line-height-multiplier)); /* 64px */
+  --t-line-height-xsm: calc(0.5 * var(--t-line-height-multiplier)); /* 8px */
+  --t-line-height-sm: calc(1 * var(--t-line-height-multiplier)); /* 16px */
+  --t-line-height-md: calc(1.5 * var(--t-line-height-multiplier)); /* 24px */
+  --t-line-height-lg: calc(2 * var(--t-line-height-multiplier)); /* 32px */
+  --t-line-height-xlg: calc(2.5 * var(--t-line-height-multiplier)); /* 40px */
+  --t-line-height-xxlg: calc(4 * var(--t-line-height-multiplier)); /* 64px */
 
   /* Font Weight */
   --t-font-weight-light: calc(3 * var(--t-font-weight-multiplier)); /* 300 */
@@ -46,11 +45,11 @@
   /*
    * General Spacing 
    */
-  --t-spacing-sm: calc(1 * var(--t-spacing-multiplier)); /* 8px */
-  --t-spacing-md: calc(2 * var(--t-spacing-multiplier)); /* 16px */
-  --t-spacing-lg: calc(3 * var(--t-spacing-multiplier)); /* 24px */
-  --t-spacing-xlg: calc(4 * var(--t-spacing-multiplier)); /* 32px */
-  --t-spacing-xxlg: calc(6 * var(--t-spacing-multiplier)); /* 48px */
+  --t-spacing-sm: calc(0.5 * var(--t-spacing-multiplier)); /* 8px */
+  --t-spacing-md: calc(1 * var(--t-spacing-multiplier)); /* 16px */
+  --t-spacing-lg: calc(1.5 * var(--t-spacing-multiplier)); /* 24px */
+  --t-spacing-xlg: calc(2 * var(--t-spacing-multiplier)); /* 32px */
+  --t-spacing-xxlg: calc(3 * var(--t-spacing-multiplier)); /* 48px */
 
   /*
    * Border Radius 
@@ -82,14 +81,14 @@
   --t-text-color-on-primary-color-bg: var(--t-text-color-on-indigo-color-bg);
 
   /* Secondary Colors */
-  --secondary-color: var(--t-blue-color);
-  --secondary-color-light: var(--t-blue-color-light);
-  --secondary-color-very-light: var(--t-blue-color-very-light);
-  --secondary-color-dark: var(--t-blue-color-dark);
-  --secondary-color-very-dark: var(--t-blue-color-very-dark);
-  --secondary-box-shadow-color: var(--t-blue-box-shadow-color);
-  --secondary-box-shadow-color-darker: var(--t-blue-box-shadow-color-darker);
-  --text-color-on-secondary-color-bg: var(--t-text-color-on-blue-color-bg);
+  --t-secondary-color: var(--t-blue-color);
+  --t-secondary-color-light: var(--t-blue-color-light);
+  --t-secondary-color-very-light: var(--t-blue-color-very-light);
+  --t-secondary-color-dark: var(--t-blue-color-dark);
+  --t-secondary-color-very-dark: var(--t-blue-color-very-dark);
+  --t-secondary-box-shadow-color: var(--t-blue-box-shadow-color);
+  --t-secondary-box-shadow-color-darker: var(--t-blue-box-shadow-color-darker);
+  --t-text-color-on-secondary-color-bg: var(--t-text-color-on-blue-color-bg);
 
   /* Success Colors */
   --t-success-color: var(--t-green-color);
@@ -165,11 +164,11 @@
    */
 
   /* Font Size */
-  --t-font-size-multiplier: 0.8rem;
+  --t-font-size-multiplier: 1rem;
 
   /* Line Height */
   --t-line-height: 1.5; /* Internet's Recomendation */
-  --t-line-height-multiplier: 0.8rem;
+  --t-line-height-multiplier: 1rem;
 
   /* Font Weight */
   --t-font-weight: var(--t-font-weight-regular);
@@ -178,7 +177,7 @@
   /*
    * General Spacing 
    */
-  --t-spacing-multiplier: 0.8rem;
+  --t-spacing-multiplier: 1rem;
 
   /*
    * Colours
