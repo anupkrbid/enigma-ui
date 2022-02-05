@@ -57,10 +57,16 @@ p {
   font-weight: var(--t-font-weight-regular);
 }
 
+strong {
+  font-weight: var(--t-font-weight-semibold);
+}
+
 /*
  * Components
  * 1. Avatar
  * 2. Badge
+ * 3. Alert
+ * 4. Button
  */
 
 /* Avatar */
@@ -83,6 +89,16 @@ p {
   position: absolute;
 }
 
+.has-badge .is-top-right {
+  top: calc(var(--t-spacing-sm) * -1);
+  right: calc(var(--t-spacing-sm) * -1);
+}
+
+.has-badge .is-bottom-right {
+  bottom: calc(var(--t-spacing-sm) * -1);
+  right: calc(var(--t-spacing-sm) * -1);
+}
+
 .badge {
   border-radius: var(--t-border-radius-round);
   padding: 1px 2px;
@@ -90,14 +106,93 @@ p {
   background-color: var(--t-gray-color-dark);
 }
 
-.badge.is-top-right {
-  top: calc(var(--t-spacing-sm) * -1);
-  right: calc(var(--t-spacing-sm) * -1);
+.badge.is-primary {
+  color: var(--t-text-color-on-primary-color-bg);
+  background-color: var(--t-primary-color);
 }
 
-.badge.is-bottom-right {
-  bottom: calc(var(--t-spacing-sm) * -1);
-  right: calc(var(--t-spacing-sm) * -1);
+.badge.is-secondary {
+  color: var(--t-text-color-on-secondary-color-bg);
+  background-color: var(--t-secondary-color);
+}
+
+.badge.is-success {
+  color: var(--t-text-color-on-success-color-bg);
+  background-color: var(--t-success-color);
+}
+
+.badge.is-warning {
+  color: var(--t-text-color-on-warning-color-bg);
+  background-color: var(--t-warning-color);
+}
+
+.badge.is-error {
+  color: var(--t-text-color-on-error-color-bg);
+  background-color: var(--t-error-color);
+}
+
+/* Alert */
+
+.alert {
+  block-size: 100%;
+  padding-block: var(--t-spacing-md);
+  padding-inline: var(--t-spacing-lg);
+  border-radius: var(--t-border-radius-sm);
+}
+
+.alert.is-primary {
+  color: var(--t-text-color-on-primary-color-bg);
+  background-color: var(--t-primary-color-light);
+  border: 1px solid var(--t-primary-color);
+}
+
+.alert.is-secondary {
+  color: var(--t-text-color-on-secondary-color-bg);
+  background-color: var(--t-secondary-color-light);
+  border: 1px solid var(--t-secondary-color);
+}
+
+.alert.is-success {
+  color: var(--t-text-color-on-success-color-bg);
+  background-color: var(--t-success-color-light);
+  border: 1px solid var(--t-success-color);
+}
+
+.alert.is-warning {
+  color: var(--t-text-color-on-warning-color-bg);
+  background-color: var(--t-warning-color-light);
+  border: 1px solid var(--t-warning-color);
+}
+
+.alert.is-error {
+  color: var(--t-text-color-on-error-color-bg);
+  background-color: var(--t-error-color-light);
+  border: 1px solid var(--t-error-color);
+}
+
+.alert.is-primary-outlined {
+  color: var(--t-primary-color-dark);
+  border: 1px solid var(--t-primary-color);
+}
+
+.alert.is-secondary-outlined {
+  color: var(--t-secondary-color-dark);
+  border: 1px solid var(--t-secondary-color);
+}
+
+.alert.is-success-outlined {
+  color: var(--t-success-color-dark);
+  border: 1px solid var(--t-success-color);
+}
+
+.alert.is-warning-outlined {
+  color: var(--t-warning-color-dark);
+  border: 1px solid var(--t-warning-color);
+}
+
+.alert.is-error-outlined {
+  color: var(--t-error-color-dark);
+  border: 1px solid var(--t-error-color);
 }
 
 /*
@@ -107,7 +202,6 @@ p {
  * 2.  Line Height
  * 3.  Font Weight
  * 4.  General Sizing
- * 5.  Background
  */
 
 /* Font Size */
@@ -198,31 +292,4 @@ p {
 
 .is-rounded {
   border-radius: var(--t-border-radius-round) !important;
-}
-
-/* Background */
-
-.has-bg-primary {
-  color: var(--t-text-color-on-primary-color-bg) !important;
-  background-color: var(--t-primary-color) !important;
-}
-
-.has-bg-secondary {
-  color: var(--t-text-color-on-secondary-color-bg) !important;
-  background-color: var(--t-secondary-color) !important;
-}
-
-.has-bg-success {
-  color: var(--t-text-color-on-success-color-bg) !important;
-  background-color: var(--t-success-color) !important;
-}
-
-.has-bg-warning {
-  color: var(--t-text-color-on-warning-color-bg) !important;
-  background-color: var(--t-warning-color) !important;
-}
-
-.has-bg-error {
-  color: var(--t-text-color-on-error-color-bg) !important;
-  background-color: var(--t-error-color) !important;
 }

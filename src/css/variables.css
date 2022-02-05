@@ -98,7 +98,7 @@
   --t-success-color-very-dark: var(--t-green-color-very-dark);
   --t-success-box-shadow-color: var(--t-green-box-shadow-color);
   --t-success-box-shadow-color-darker: var(--t-green-box-shadow-color-darker);
-  --t-text-color-on-success-color-bg: var(--text-color-on-t-green-color-bg);
+  --t-text-color-on-success-color-bg: var(--t-text-color-on-green-color-bg);
 
   /* Warning Colors */
   --t-warning-color: var(--t-yellow-color);
@@ -108,7 +108,7 @@
   --t-warning-color-very-dark: var(--t-yellow-color-very-dark);
   --t-warning-box-shadow-color: var(--t-yellow-box-shadow-color);
   --t-warning-box-shadow-color-darker: var(--t-yellow-box-shadow-color-darker);
-  --t-text-color-on-warning-color-bg: var(--t-text-color-on-t-yellow-color-bg);
+  --t-text-color-on-warning-color-bg: var(--t-text-color-on-yellow-color-bg);
 
   /* Error Colors */
   --t-error-color: var(--t-red-color);
@@ -221,7 +221,7 @@
   --t-green-color-very-dark: #17312a;
   --t-green-box-shadow-color: rgba(11, 232, 129, 0.3);
   --t-green-box-shadow-color-darker: rgba(11, 232, 129, 0.6);
-  --t-text-color-on-green-color-bg: var(--lm-base-text-color);
+  --t-text-color-on-green-color-bg: #ffffff;
 
   /* Yellow */
   --t-yellow-color: #ffcf00; /* rgba(255, 207, 0, 1) */
@@ -231,7 +231,7 @@
   --t-yellow-color-very-dark: #302c1d;
   --t-yellow-box-shadow-color: rgba(255, 207, 0, 0.3);
   --t-yellow-box-shadow-color-darker: rgba(255, 207, 0, 0.6);
-  --t-text-color-on-yellow-color-bg: var(--lm-base-text-color);
+  --t-text-color-on-yellow-color-bg: #ffffff;
 
   /* Orange */
   --t-orange-color: #ed8936; /* rgba(237, 137, 54, 1) */
