@@ -6,7 +6,7 @@
 html,
 body {
   font-family: var(--t-font-family);
-  font-size: var(--t-font-size);
+  font-size: var(--t-font-size-sm);
 }
 
 h1,
@@ -58,11 +58,56 @@ p {
 }
 
 /*
+ * Components
+ * 1. Avatar
+ * 2. Badge
+ */
+
+/* Avatar */
+.avatar {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: var(--t-font-size-md);
+  block-size: 2.5em;
+  inline-size: 2.5em;
+  border-radius: var(--t-border-radius-md);
+}
+
+/* Badge */
+.has-badge {
+  position: relative;
+  display: inline-block;
+}
+
+.has-badge .badge {
+  position: absolute;
+}
+
+.badge {
+  border-radius: var(--t-border-radius-round);
+  padding: 1px 2px;
+  color: var(--t-text-color);
+  background-color: var(--t-gray-color-dark);
+}
+
+.badge.is-top-right {
+  top: calc(var(--t-spacing-sm) * -1);
+  right: calc(var(--t-spacing-sm) * -1);
+}
+
+.badge.is-bottom-right {
+  bottom: calc(var(--t-spacing-sm) * -1);
+  right: calc(var(--t-spacing-sm) * -1);
+}
+
+/*
  * Helpers
  * ~ TOC ~
  * 1.  Font Size
  * 2.  Line Height
  * 3.  Font Weight
+ * 4.  General Sizing
+ * 5.  Background
  */
 
 /* Font Size */
@@ -123,4 +168,61 @@ p {
 }
 .has-fw-black {
   font-weight: var(--font-weight-black) !important;
+}
+
+/* General Sizing */
+
+.is-xsm {
+  font-size: var(--t-font-size-xsm) !important;
+}
+
+.is-sm {
+  font-size: var(--t-font-size-sm) !important;
+}
+
+.is-md {
+  font-size: var(--t-font-size-md) !important;
+}
+
+.is-lg {
+  font-size: var(--t-font-size-lg) !important;
+}
+
+.is-xlg {
+  font-size: var(--t-font-size-xlg) !important;
+}
+
+.is-xxlg {
+  font-size: var(--t-font-size-xxlg) !important;
+}
+
+.is-rounded {
+  border-radius: var(--t-border-radius-round) !important;
+}
+
+/* Background */
+
+.has-bg-primary {
+  color: var(--t-text-color-on-primary-color-bg) !important;
+  background-color: var(--t-primary-color) !important;
+}
+
+.has-bg-secondary {
+  color: var(--t-text-color-on-secondary-color-bg) !important;
+  background-color: var(--t-secondary-color) !important;
+}
+
+.has-bg-success {
+  color: var(--t-text-color-on-success-color-bg) !important;
+  background-color: var(--t-success-color) !important;
+}
+
+.has-bg-warning {
+  color: var(--t-text-color-on-warning-color-bg) !important;
+  background-color: var(--t-warning-color) !important;
+}
+
+.has-bg-error {
+  color: var(--t-text-color-on-error-color-bg) !important;
+  background-color: var(--t-error-color) !important;
 }
