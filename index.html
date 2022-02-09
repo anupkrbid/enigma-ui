@@ -10,41 +10,21 @@
       name="description"
       content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
     />
-    <link rel="stylesheet" href="./docs/style.css" />
+    <link rel="stylesheet" href="./docs/assets/styles/style.css" />
   </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="nav-content nav-content-left">
-          <!-- <button class="btn btn-icon">
-            <i class="fas fa-bars"></i>
-          </button> -->
-          <div class="nav-brand">fιиєѕѕє υι</div>
-          <ui class="list-inline">
-            <li><a class="nav-link nav-link-active" href="./home">Home</a></li>
-            <li>
-              <a class="nav-link" href="./documentation">Documentation</a>
-            </li>
-          </ui>
-        </div>
-        <div class="nav-content nav-content-right">
-          <button class="btn btn-icon">
-            <i class="fas fa-moon"></i>
-          </button>
-          <div class="btn btn-primary">Download</div>
-        </div>
-      </nav>
-    </header>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="home"></custom-header>
 
     <main>
-      <div
-        class="hero container-desktop flex-direction-row-desktop-onwards mbs-48"
-      >
+      <div class="hero container-laptop flex-direction-row-desktop-onwards">
         <div class="hero-image">
-          <img src="./docs/assets/sitemap-solid.svg" alt="banner image" />
+          <img
+            src="./docs/assets/images/sitemap-solid.svg"
+            alt="banner image"
+          />
         </div>
         <div class="hero-description">
-          <h1 class="h0">
+          <h1 class="h1">
             Finesse UI: A declarative CSS framework that just works.
           </h1>
           <p class="mbs-16">
@@ -54,10 +34,13 @@
           </p>
           <div class="mbs-8">
             <button class="btn btn-primary">Download</button>
-            <a class="btn" href="./docs/docs.html">Go To Docs</a>
+            <a class="btn" href="/docs/introduction.html">Go To Docs</a>
           </div>
         </div>
       </div>
     </main>
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
   </body>
 </html>

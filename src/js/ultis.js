@@ -116,7 +116,7 @@ var cssFontWeightClass = (value) => {
 };
 
 // Display
-var display = ["block", "inline-block", "flex"];
+var display = ["none", "block", "inline-block", "flex", "grid"];
 var cssDisplayClass = (value) => {
   return `
     .d-${value} {

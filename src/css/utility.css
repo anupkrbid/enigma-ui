@@ -1052,6 +1052,10 @@
 
 /* Display */
 
+.d-none {
+  display: none !important;
+}
+
 .d-block {
   display: block !important;
 }
@@ -1062,6 +1066,16 @@
 
 .d-flex {
   display: flex !important;
+}
+
+@media screen and (min-width: 40rem) {
+  .d-none-tablet-onwards {
+    display: none !important;
+  }
+
+  .d-block-tablet-onwards {
+    display: block;
+  }
 }
 
 /* Flex Box */

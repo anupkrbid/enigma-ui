@@ -195,16 +195,16 @@
   --color-stone-900: #7f1d1d;
 
   /* Orange */
-  --color-stone-50: #fff7ed;
-  --color-stone-100: #ffedd5;
-  --color-stone-200: #fed7aa;
-  --color-stone-300: #fdba74;
-  --color-stone-400: #fb923c;
-  --color-stone-500: #f97316;
-  --color-stone-600: #ea580c;
-  --color-stone-700: #c2410c;
-  --color-stone-800: #9a3412;
-  --color-stone-900: #7c2d12;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
 
   /* Amber */
   --color-amber-50: #fffbeb;
