@@ -1,8 +1,23 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 @import url("../../../src/css/finesse.css");
+
+@font-face {
+  font-family: "SAMAN";
+  src: url("/docs/assets/fonts/SAMAN.eot");
+  src: url("/docs/assets/fonts/SAMAN.eot") format("embedded-opentype"),
+    url("/docs/assets/fonts/SAMAN.woff2") format("woff2"),
+    url("/docs/assets/fonts/SAMAN.woff") format("woff"),
+    url("/docs/assets/fonts/SAMAN.ttf") format("truetype"),
+    url("/docs/assets/fonts/SAMAN.svg#SAMAN") format("svg");
+}
 
 header {
   border-block-end: 1px solid var(--border-color);
+}
+
+.nav-brand {
+  font-family: "SAMAN";
+  font-size: 2rem;
 }
 
 footer {
@@ -11,6 +26,12 @@ footer {
 
 .sidebar {
   inline-size: 15rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .sidebar-visible-tablet-onwards {
+    display: block;
+  }
 }
 
 custom-sidebar {

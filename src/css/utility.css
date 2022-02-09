@@ -1074,7 +1074,11 @@
   }
 
   .d-block-tablet-onwards {
-    display: block;
+    display: block !important;
+  }
+
+  .d-flex-tablet-onwards {
+    display: flex !important;
   }
 }
 
@@ -3685,4 +3689,9 @@
   .flex-fill-desktop-only {
     flex: 0 0 auto !important;
   }
+}
+
+/* Width */
+.is-100 {
+  inline-size: 100% !important;
 }

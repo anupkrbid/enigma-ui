@@ -405,6 +405,10 @@ a {
   gap: var(--spacing-16);
 }
 
+.nav-content-hidden {
+  display: none;
+}
+
 .nav-content-left {
   justify-content: flex-start;
 }
@@ -442,6 +446,28 @@ a {
 .footer .footer-header {
   font-size: var(--font-size-7);
   font-weight: var(--font-weight-600);
+  margin-block-end: var(--spacing-8);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: calc(100% + var(--spacing-8));
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color-light);
+  display: none;
+  border-radius: var(--spacing-2);
+  padding: var(--spacing-8);
+}
+
+.dropdown-active .dropdown-menu {
+  display: block;
 }
 
 /* Hero */
