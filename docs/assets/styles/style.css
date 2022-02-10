@@ -39,8 +39,10 @@ custom-sidebar {
   border-inline-end: 1px solid var(--border-color);
 }
 
-.card-container-demo {
+.card-container-demo,
+.avatar-container-demo {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }

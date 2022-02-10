@@ -108,7 +108,7 @@ class Sidebar extends HTMLElement {
           <li><a class="nav-link ${this.isLinkActive(
             activeNav,
             "avatars"
-          )}" href="/docs/cards.html">Avatars</a></li>
+          )}" href="/docs/avatars.html">Avatars</a></li>
           <li>
             <li><a class="nav-link ${this.isLinkActive(
               activeNav,
