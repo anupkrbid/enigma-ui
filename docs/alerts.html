@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alerts | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="alerts"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Alerts</h1>
+        <p>
+          Alerts can be used to provide feedback messages to users. Different
+          types of alerts are available for different types of messages.
+        </p>
+        <hr />
+
+        <h2>Types of Alerts</h2>
+        <p>
+          Below are examples of different
+          <strong> types of alerts</strong>. Add a <code>.alert</code> class a
+          div to crea a default alert. The type of alert can be changed by
+          adding differnt classes like <code>.alert-primary</code>,
+          <code>.alert-secondary</code>, <code>.alert-success</code>,
+          <code>.alert-warning</code> and <code>.alert-danger</code>. In the
+          clert container there should be two divs with the following classes
+          <code>.alert-icon</code> and <code>.alert-content</code>. If you dont
+          want the icon you can remove the div with the class
+          <code>.alert-icon</code> or keep the div empty.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="alert-container-demo">
+              <div class="alert" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Default Alert</h3>
+                  <p>This is a default alert with some content.</p>
+                </div>
+              </div>
+
+              <div class="alert alert-primary" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Primary Alert</h3>
+                  <p>This is a primary alert with some content.</p>
+                </div>
+              </div>
+
+              <div class="alert alert-secondary" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Secondary Alert</h3>
+                  <p>This is a secondary alert with some content.</p>
+                </div>
+              </div>
+
+              <div class="alert alert-success" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Success Alert</h3>
+                  <p>This is a success alert with some content.</p>
+                </div>
+              </div>
+
+              <div class="alert alert-warning" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Warning Alert</h3>
+                  <p>This is a warning alert with some content.</p>
+                </div>
+              </div>
+
+              <div class="alert alert-danger" role="alert">
+                <div class="alert-icon">
+                  <i class="fas fa-times-circle"></i>
+                </div>
+                <div class="alert-content">
+                  <h3 class="h5">Danger Alert</h3>
+                  <p>This is a danger alert with some content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-code%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253EDefault%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520default%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253EPrimary%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-lock%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ESecondary%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520secondary%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ESuccess%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520success%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253EWarning%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520warning%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%2520role%253D%2522alert%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253EDanger%2520Alert%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520danger%2520alert%2520with%2520some%2520content.%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
