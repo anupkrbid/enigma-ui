@@ -86,6 +86,9 @@
   --spacing-48: 3rem; /* 48px */
   --spacing-52: 3.25rem; /* 52px */
   --spacing-56: 3.5rem; /* 56px */
+  --spacing-80: 5rem; /* 80px */
+  --spacing-160: 10rem; /* 160px */
+  --spacing-320: 20rem; /* 320px */
 
   /*
    * Border Radius 
@@ -95,7 +98,7 @@
   --border-radius-2: 0.125rem; /* 2px */
   --border-radius-4: 0.25rem; /* 4px */
   --border-radius-8: 0.5rem; /* 8px */
-  --border-radius-l6: 1rem; /* 16px */
+  --border-radius-16: 1rem; /* 16px */
   --border-radius-round: 9999px; /* 9999px */
 
   /*

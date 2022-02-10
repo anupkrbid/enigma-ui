@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatars | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="avatars"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Avatars</h1>
+        <p>
+          Avatars are images that users can set as their profile picture. They
+          can be regular squares, rounded squares or completely rounded.
+        </p>
+        <hr />
+
+        <h2>Regular Square Avatars</h2>
+        <p>
+          Below is an example of <strong>regular square avatars</strong> of
+          different sizes. Add a <code>.avatar</code> class to turn an
+          <code>img</code> tag into an avatar. Additionally you can add
+          <code>.avatar-small</code>, <code>.avatar-large</code> and
+          <code>.avatar-xlarge</code> class with the <code>.avatar</code> class
+          to increas or decrease it's size.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="avatar-container-demo">
+              <img
+                class="avatar avatar-small"
+                src="https://i.pravatar.cc/400"
+                alt="small avatar"
+              />
+              <img
+                class="avatar"
+                src="https://i.pravatar.cc/400"
+                alt="avatar"
+              />
+              <img
+                class="avatar avatar-large"
+                src="https://i.pravatar.cc/400"
+                alt="large avatar"
+              />
+              <img
+                class="avatar avatar-xlarge"
+                src="https://i.pravatar.cc/400"
+                alt="extra large avatar"
+              />
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-small%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522small%2520avatar%2522%250A%252F%253E%250A%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-large%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522large%2520avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-xlarge%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522extra%2520large%2520avatar%2522%250A%252F%253E"
+              style="
+                width: 745px;
+                height: 440px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Rounded Square Avatars</h2>
+        <p>
+          Below is an example of <strong>rounded square avatars</strong> of
+          different sizes. Add a
+          <code>.avatar.avatar-rounded-square</code> class to turn an
+          <code>img</code> tag into an avatar. Additionally you can add
+          <code>.avatar-small</code>, <code>.avatar-large</code> and
+          <code>.avatar-xlarge</code> class with the <code>.avatar</code> class
+          to increas or decrease it's size.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="avatar-container-demo">
+              <img
+                class="avatar avatar-rounded-square avatar-small"
+                src="https://i.pravatar.cc/400"
+                alt="small avatar"
+              />
+              <img
+                class="avatar avatar-rounded-square"
+                src="https://i.pravatar.cc/400"
+                alt="avatar"
+              />
+              <img
+                class="avatar avatar-rounded-square avatar-large"
+                src="https://i.pravatar.cc/400"
+                alt="large avatar"
+              />
+              <img
+                class="avatar avatar-rounded-square avatar-xlarge"
+                src="https://i.pravatar.cc/400"
+                alt="extra large avatar"
+              />
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded-square%2520avatar-small%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522small%2520avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded-square%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded-square%2520avatar-large%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522large%2520avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded-square%2520avatar-xlarge%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522extra%2520large%2520avatar%2522%250A%252F%253E"
+              style="
+                width: 583px;
+                height: 536px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Rounded Avatars</h2>
+        <p>
+          Below is an example of <strong>rounded avatars</strong> of different
+          sizes. Add a <code>.avatar.avatar-rounded</code> class to turn an
+          <code>img</code> tag into an avatar. Additionally you can add
+          <code>.avatar-small</code>, <code>.avatar-large</code> and
+          <code>.avatar-xlarge</code> class with the <code>.avatar</code> class
+          to increas or decrease it's size.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="avatar-container-demo">
+              <img
+                class="avatar avatar-rounded avatar-small"
+                src="https://i.pravatar.cc/400"
+                alt="small avatar"
+              />
+              <img
+                class="avatar avatar-rounded"
+                src="https://i.pravatar.cc/400"
+                alt="avatar"
+              />
+              <img
+                class="avatar avatar-rounded avatar-large"
+                src="https://i.pravatar.cc/400"
+                alt="large avatar"
+              />
+              <img
+                class="avatar avatar-rounded avatar-xlarge"
+                src="https://i.pravatar.cc/400"
+                alt="extra large avatar"
+              />
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded%2520avatar-small%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522small%2520avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded%2520avatar-large%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522large%2520avatar%2522%250A%252F%253E%250A%253Cimg%250A%2520%2520class%253D%2522avatar%2520avatar-rounded%2520avatar-xlarge%2522%250A%2520%2520src%253D%2522https%253A%252F%252Fi.pravatar.cc%252F400%2522%250A%2520%2520alt%253D%2522extra%2520large%2520avatar%2522%250A%252F%253E"
+              style="
+                width: 507px;
+                height: 536px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>

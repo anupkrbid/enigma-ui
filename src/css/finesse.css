@@ -79,7 +79,7 @@ small,
 
 strong {
   font-size: var(--font-size-6);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-600);
 }
 
 a {
@@ -202,9 +202,9 @@ code {
 .avatar {
   display: inline-block;
   vertical-align: middle;
-  block-size: var(--spacing-40);
-  inline-size: var(--spacing-40);
-  border-radius: var(--border-radius-md);
+  block-size: var(--spacing-80);
+  inline-size: var(--spacing-80);
+  border-radius: var(--border-radius-2);
   border: 1px solid var(--border-color);
 }
 
@@ -212,19 +212,23 @@ code {
   border-radius: var(--border-radius-round);
 }
 
+.avatar.avatar-rounded-square {
+  border-radius: var(--border-radius-16);
+}
+
 .avatar.avatar-small {
-  block-size: var(--spacing-32);
-  inline-size: var(--spacing-32);
+  block-size: var(--spacing-40);
+  inline-size: var(--spacing-40);
 }
 
 .avatar.avatar-large {
-  block-size: var(--spacing-48);
-  inline-size: var(--spacing-48);
+  block-size: var(--spacing-160);
+  inline-size: var(--spacing-160);
 }
 
 .avatar.avatar-xlarge {
-  block-size: var(--spacing-56);
-  inline-size: var(--spacing-56);
+  block-size: var(--spacing-320);
+  inline-size: var(--spacing-320);
 }
 
 /* Badge */
