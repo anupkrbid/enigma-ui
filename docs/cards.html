@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="cards"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Cards</h1>
+        <p>
+          Cards are built with as little markup and styles as possible, but
+          still manage to deliver a ton of control and customization. Built with
+          flexbox, they offer easy alignment and mix well with other Finesse UI
+          components. They have no margin by default, so use spacing utilities
+          as needed. Cards have no fixed width to start, so they’ll naturally
+          fill the full width of its parent element. This is easily customized
+          with the sizing of your choice.
+        </p>
+        <hr />
+
+        <h2>Text Only Card</h2>
+        <p>
+          Below is an example of a <strong>basic text only card</strong>. Add a
+          <code>.card.card-potrait.card-text-only</code> class to turn a div
+          into a card and add <code>.card-description-action</code> class as
+          child element which can hold all your text.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-potrait card-text-only">
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h2 class="h4">Card Heading</h2>
+                    <h2 class="h6">Card Sub Heading</h2>
+                    <p>A card description with only text as example</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-potrait%2520card-text-only%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522h4%2522%253ECard%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522h6%2522%253ECard%2520Sub%2520Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EA%2520card%2520description%2520with%2520only%2520text%2520as%2520example%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 637px;
+                height: 272px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Basic Potrait Card with Shadow</h2>
+        <p>
+          Below is an example of a
+          <strong>basic potrait card with shadow</strong>. Add a
+          <code>.card.card-potrait.card-shadow</code> class to turn a div into a
+          card and add <code>.card-img</code> to hold the image and
+          <code>.card-description-action</code> class as child element which can
+          hold all your text and action buttons.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-potrait card-shadow">
+                <div class="card-img">
+                  <img src="https://picsum.photos/450/600" alt="card image" />
+                </div>
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h3 class="h5">Card Heading</h3>
+                    <p class="h6">$ 200</p>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn btn-primary-outlined">
+                      add to cart
+                    </button>
+                    <button class="btn btn-primary">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-potrait%2520card-shadow%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F450%252F600%2522%2520alt%253D%2522card%2520image%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ECard%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253E%2524%2520200%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Ebuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 745px;
+                height: 416px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Basic Landscape Card</h2>
+        <p>
+          Below is an example of a <strong>basic landscape card</strong>. Add a
+          <code>.card.card-landscape</code> class to turn a div into a card in
+          landscape mode, <code>.card-img</code> to hold the image and
+          <code>.card-description-action</code> class as child element which can
+          hold all your text and action buttons.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-landscape">
+                <div class="card-img">
+                  <img src="https://picsum.photos/450/600" alt="card image" />
+                </div>
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h3 class="h5">Card Heading</h3>
+                    <p class="h6">$ 200</p>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn btn-primary-outlined">
+                      add to cart
+                    </button>
+                    <button class="btn btn-primary">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-landscape%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F450%252F600%2522%2520alt%253D%2522card%2520image%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ECard%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253E%2524%2520200%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Ebuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 745px;
+                height: 416px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Basic Card with Text Badge</h2>
+        <p>
+          Below is an example of a
+          <strong>basic potrait card with text badge</strong>. Add a
+          <code>.card.card-potrait</code> class to turn a div into a card and
+          add <code>.card-img</code> to hold the image and
+          <code>.card-description-action</code> class as child element which can
+          hold all your text and action buttons. Adding
+          <code>.card-badge-container</code> along with
+          <code>.card-img</code> will setup the card to have a badge, then add
+          <code>.card-text-badge</code> next to the <code>img</code> tag will
+          show the badge on your card.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-potrait">
+                <div class="card-img card-badge-container">
+                  <img src="https://picsum.photos/450/600" alt="card image" />
+                  <span class="card-text-badge">New</span>
+                </div>
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h3 class="h5">Card Heading</h3>
+                    <p class="h6">$ 200</p>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn btn-primary-outlined">
+                      add to cart
+                    </button>
+                    <button class="btn btn-primary">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-potrait%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-img%2520card-badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F450%252F600%2522%2520alt%253D%2522card%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ECard%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253E%2524%2520200%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Ebuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 745px;
+                height: 440px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Basic Card with Button Badge</h2>
+        <p>
+          Below is an example of a
+          <strong>basic potrait card with button badge</strong>. Add a
+          <code>.card.card-potrait</code> class to turn a div into a card and
+          add <code>.card-img</code> to hold the image and
+          <code>.card-description-action</code> class as child element which can
+          hold all your text and action buttons. Adding
+          <code>.card-badge-container</code> along with
+          <code>.card-img</code> will setup the card to have a badge, then add
+          <code>.card-btn-badge</code> on a <code>button</code> element and
+          place it next to the <code>img</code> tag will show the badge on your
+          card.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-potrait">
+                <div class="card-img card-badge-container">
+                  <img src="https://picsum.photos/450/600" alt="card image" />
+                  <button
+                    class="btn btn-icon card-btn-badge card-btn-badge-active"
+                  >
+                    <i class="fas fa-heart"></i>
+                  </button>
+                </div>
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h3 class="h5">Card Heading</h3>
+                    <p class="h6">$ 200</p>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn btn-primary-outlined">
+                      add to cart
+                    </button>
+                    <button class="btn btn-primary">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-potrait%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-img%2520card-badge-container%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F450%252F600%2522%2520alt%253D%2522card%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520card-btn-badge%2520card-btn-badge-active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ECard%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253E%2524%2520200%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Ebuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 777px;
+                height: 488px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Basic Potrait Card With Text Overlay</h2>
+        <p>
+          Below is an example of a
+          <strong>basic potrait card with text overlay</strong>. Add a
+          <code>.card.card-potrait.card-overlay-container</code> class to turn a
+          div into a card that can host a text overlay and add
+          <code>.card-img</code> to hold the image and
+          <code>.card-description-action</code> class as child element which can
+          hold all your text and action buttons. Adding
+          <code>.card-overlay.card-overlay-active</code> next to the
+          <code>img</code> tag will show the text overlay on your card.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="card-container-demo">
+              <div class="card card-potrait card-overlay-container">
+                <div class="card-img">
+                  <img src="https://picsum.photos/450/600" alt="card image" />
+                </div>
+                <span class="card-overlay card-overlay-active h5"
+                  >Out Of Stock</span
+                >
+                <div class="card-description-action">
+                  <div class="card-description mb-8 mi-8">
+                    <h3 class="h5">Card Heading</h3>
+                    <p class="h6">$ 200</p>
+                  </div>
+                  <div class="card-action">
+                    <button class="btn btn-primary-outlined">
+                      add to cart
+                    </button>
+                    <button class="btn btn-primary">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-potrait%2520card-overlay-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F450%252F600%2522%2520alt%253D%2522card%2520image%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card-overlay%2520card-overlay-active%2520h5%2522%253EOut%2520Of%2520Stock%253C%252Fspan%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-description-action%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-description%2520mb-8%2520mi-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522h5%2522%253ECard%2520Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522h6%2522%253E%2524%2520200%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253Ebuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 788px;
+                height: 440px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>

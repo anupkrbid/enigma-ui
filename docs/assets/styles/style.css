@@ -38,3 +38,11 @@ custom-sidebar {
   display: none;
   border-inline-end: 1px solid var(--border-color);
 }
+
+.card-container-demo > .card {
+  max-inline-size: 15rem;
+}
+
+.card-container-demo > .card.card-landscape {
+  max-inline-size: 25rem;
+}

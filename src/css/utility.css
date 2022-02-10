@@ -3695,3 +3695,7 @@
 .is-100 {
   inline-size: 100% !important;
 }
+
+.spacer > * + * {
+  margin-block-start: 1em;
+}
