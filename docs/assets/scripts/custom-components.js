@@ -105,27 +105,36 @@ class Sidebar extends HTMLElement {
         <h5>Components</h5>
         <nav class="nav mbs-16">
           <ul class="list">
-          <li><a class="nav-link ${this.isLinkActive(
-            activeNav,
-            "avatars"
-          )}" href="/docs/avatars.html">Avatars</a></li>
-          <li>
-            <li><a class="nav-link ${this.isLinkActive(
-              activeNav,
-              "cards"
-            )}" href="/docs/cards.html">Cards</a></li>
-            <li><a class="nav-link ${this.isLinkActive(
-              activeNav,
-              "alerts"
-            )}" href="/docs/alerts.html">Alert</a></li>
-            <li><a class="nav-link ${this.isLinkActive(
-              activeNav,
-              "badges"
-            )}" href="/docs/badge.html">Badge</a></li>
-            <li><a class="nav-link ${this.isLinkActive(
-              activeNav,
-              "buttons"
-            )}" href="/docs/buttons.html">Buttons</a></li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "avatars"
+              )}" href="/docs/avatars.html">Avatars</a>
+            </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "badges"
+              )}" href="/docs/badges.html">Badge</a>
+            </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "cards"
+              )}" href="/docs/cards.html">Cards</a>
+            </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "alerts"
+              )}" href="/docs/alerts.html">Alert</a>
+            </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "buttons"
+              )}" href="/docs/buttons.html">Buttons</a>
+            </li>
           </ul>
         </nav>
       </section>

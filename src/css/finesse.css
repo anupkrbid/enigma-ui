@@ -191,11 +191,17 @@ code {
 
 /*
  * Components
- * 1. Avatar
- * 2. Badge
- * 3. Alert
- * 4. Button
- * 5. Hero
+ *  1. Avatar
+ *  2. Badge
+ *  3. Alert
+ *  4. Button
+ *  5. List
+ *  6. Nav
+ *  7. Footer
+ *  8. Dropdown
+ *  9. Hero
+ * 10. Card
+ * 11. Panel 
  */
 
 /* Avatar */
@@ -242,27 +248,27 @@ code {
 }
 
 .badge-container .badge-top-right {
-  top: calc(var(--spacing-10) * -1);
-  right: calc(var(--spacing-10) * -1);
+  inset-block-start: -20%;
+  inset-inline-start: 80%;
 }
 
 .badge-container .badge-bottom-right {
-  bottom: calc(var(--spacing-10) * -1);
-  right: calc(var(--spacing-10) * -1);
+  inset-block-end: 10%;
+  inset-inline-start: 80%;
 }
 
 .badge {
   display: inline-block;
   padding-block: var(--spacing-2);
-  padding-inline: var(--spacing-6);
-  font-size: var(--font-size-7);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-8);
   font-weight: var(--font-weight-600);
-  border-radius: var(--border-radius-round);
+  border-radius: var(--border-radius-2);
   color: var(--text-color-white);
   background-color: var(--color-gray-400);
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 /* Alert */
