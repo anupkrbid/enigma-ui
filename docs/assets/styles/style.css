@@ -39,6 +39,12 @@ custom-sidebar {
   border-inline-end: 1px solid var(--border-color);
 }
 
+.card-container-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .card-container-demo > .card {
   max-inline-size: 15rem;
 }
