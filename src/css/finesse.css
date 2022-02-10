@@ -14,6 +14,7 @@ body {
 
 ::selection {
   background-color: var(--color-blue-200);
+  border-radius: var(--spacing-2);
 }
 
 .h0 {
@@ -71,7 +72,8 @@ p {
 }
 
 small,
-.is-small {
+.small {
+  display: inline-block;
   font-size: var(--font-size-8);
 }
 
@@ -85,6 +87,13 @@ a {
   text-decoration: none;
 }
 
+code {
+  display: inline-block;
+  font-family: monospace;
+  background-color: var(--color-blue-100);
+  padding-inline: var(--spacing-4);
+  border-radius: var(--spacing-2);
+}
 /*
  * Building Blocks
  * 1. Containers
@@ -369,6 +378,15 @@ a {
   border: none;
 }
 
+.btn-flat {
+  border: 0;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+}
+
 /* List Inline */
 
 .list {
@@ -446,6 +464,7 @@ a {
 .footer .footer-header {
   font-size: var(--font-size-7);
   font-weight: var(--font-weight-600);
+  text-align: center;
   margin-block-end: var(--spacing-8);
 }
 
@@ -481,4 +500,143 @@ a {
 
 .hero .hero-image {
   inline-size: 70%;
+}
+
+/* Card */
+.card {
+  display: flex;
+  position: relative;
+  color: var(--text-color);
+  background-color: var(--bg-color-light);
+  border-radius: var(--spacing-4);
+  border: 1px solid var(--border-color);
+  inline-size: 100%;
+}
+.card.card-shadow {
+  box-shadow: var(--shadow);
+}
+
+.card .card-img {
+  max-width: 100%;
+}
+
+.card .card-badge-container {
+  position: relative;
+}
+
+.card .card-text-badge {
+  position: absolute;
+  display: inline-block;
+  padding-block: var(--spacing-2);
+  padding-inline: var(--spacing-6);
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-600);
+  border-radius: var(--border-radius-2);
+  color: var(--text-color-white);
+  background-color: var(--color-blue-600);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  inset-block-start: 5%;
+  inset-inline-start: 5%;
+}
+
+.card .card-btn-badge {
+  border-radius: var(--border-radius-round);
+  position: absolute;
+  inset-block-start: 5%;
+  inset-inline-end: 5%;
+}
+
+.card .card-btn-badge-active {
+  color: var(--color-rose-600);
+}
+
+.card-action > .btn {
+  inline-size: 100%;
+}
+
+.card.card-potrait {
+  flex-direction: column;
+}
+
+.card-potrait .card-description {
+  text-align: center;
+}
+
+.card.card-landscape {
+  flex-direction: row;
+}
+
+.card.card-landscape .card-img {
+  max-inline-size: 40%;
+}
+
+.card.card-landscape .card-description-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: var(--spacing-16);
+  padding-inline: var(--spacing-16);
+}
+
+.card.card-text-only .card-img {
+  display: none;
+}
+
+.card.card-text-only .card-description {
+  text-align: left;
+}
+
+.card.card-text-only .card-action {
+  display: none;
+}
+
+.card-overlay {
+  display: none;
+}
+
+.card.card-overlay-container {
+  position: relative;
+}
+
+.card.card-overlay-container .card-overlay-active {
+  position: absolute;
+  display: block;
+  color: var(--color-rose-600);
+  font-weight: var(--font-weight-900);
+  background-color: var(--color-gray-200);
+  opacity: 0.7;
+  border: 1px solid var(--primary-color);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Panel */
+.panel {
+  position: relative;
+  color: var(--text-color);
+  background-color: var(--bg-color-light);
+  border-radius: var(--spacing-4);
+  border: 1px solid var(--border-color);
+  inline-size: 100%;
+}
+
+.panel > * {
+  margin-block: var(--spacing-16);
+  margin-inline: var(--spacing-16);
+}
+
+.panel > * + * {
+  border-block-start: 1px solid var(--border-color);
+}
+
+.panel > .code-container {
+  max-inline-size: 100%;
+  border-block-start: 1px solid var(--border-color);
+  border-inline-start: var(--spacing-4) solid var(--color-blue-100);
 }
