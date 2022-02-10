@@ -42,7 +42,7 @@ class Header extends HTMLElement {
                 <i class="fas fa-adjust"></i>
               </button>
               <div class="dropdown" data-dropdown>
-                <button class="btn" data-dropdown-trigger>
+                <button class="btn btn-primary-outlined" data-dropdown-trigger>
                   Menu
                   <i class="fas fa-caret-square-down"></i>
                 </button>

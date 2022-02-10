@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="buttons"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Buttons</h1>
+        <p>
+          Buttons can be used to trigger user actions, such as submitting forms,
+          opening modal dialogs, etc. Different types of buttons are available
+          for different types of actions.
+        </p>
+        <hr />
+
+        <h2>Types of Buttons</h2>
+        <p>
+          Below are examples of different
+          <strong> types of buttons</strong>. Add a <code>.btn</code> class to a
+          button to get a default button. Adding differt other class transform
+          the button in different ways. <code>.btn-icon</code> makes the button
+          look like an icon. <code>.btn-text</code> makes the button look like
+          text, this can be used on anchor tags.
+          <code>.btn-primary-outlined</code> will show a button with a outline
+          and text of primary colour, <code>.btn-primary</code> will show a
+          primary colured button. <code>.btn-flat</code> will remove the outline
+          form the button. <code>.btn-raised</code> will add a box shadow which
+          make the button look like as if it has been raised a little.
+          <code>.btn-float</code> will add give the button a fixed position on
+          the view port making it float over most of the other page contents.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="button-container-demo">
+              <button class="btn btn-icon">
+                <i class="fas fa-file-code"></i>
+              </button>
+              <button class="btn">Defaut Button</button>
+              <button class="btn btn-text">Text Button</button>
+              <button class="btn btn-primary-outlined">
+                Primary Outlined Button
+              </button>
+              <button class="btn btn-primary">Primary Button</button>
+              <button class="btn btn-primary btn-flat">
+                Flat Primary Button
+              </button>
+              <button class="btn btn-primary btn-raised">
+                Raised Primary Button
+              </button>
+              <button class="btn btn-float text-primary">
+                <i class="fas fa-calendar-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-file-code%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2522%253EDefaut%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-text%2522%253EText%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary-outlined%2522%253EPrimary%2520Outlined%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-flat%2522%253EFlat%2520Primary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-raised%2522%253ERaised%2520Primary%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-float%2520text-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-calendar-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
