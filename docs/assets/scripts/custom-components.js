@@ -135,6 +135,18 @@ class Sidebar extends HTMLElement {
                 "buttons"
               )}" href="/docs/buttons.html">Buttons</a>
             </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "images"
+              )}" href="/docs/responsive-images.html">Responsive Images</a>
+            </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "forms"
+              )}" href="/docs/forms.html">Forms</a>
+            </li>
           </ul>
         </nav>
       </section>

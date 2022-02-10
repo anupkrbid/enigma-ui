@@ -202,6 +202,7 @@ code {
  *  9. Hero
  * 10. Card
  * 11. Panel 
+ * 12. Iamges
  */
 
 /* Avatar */
@@ -645,4 +646,41 @@ code {
   max-inline-size: 100%;
   border-block-start: 1px solid var(--border-color);
   border-inline-start: var(--spacing-4) solid var(--color-blue-100);
+}
+
+/* Images */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-responsive-container {
+  position: relative;
+  overflow: hidden;
+  block-size: var(--spacing-160);
+  inline-size: var(--spacing-160);
+  border-radius: var(--border-radius-2);
+}
+
+.image-responsive-container > img {
+  all: unset;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.image-responsive-container.image-responsive-container-large {
+  block-size: var(--spacing-320);
+  inline-size: var(--spacing-320);
+}
+
+.image-responsive-container.image-responsive-container-rounded-square {
+  border-radius: var(--border-radius-16);
+}
+
+.image-responsive-container.image-responsive-container-rounded {
+  border-radius: var(--border-radius-round);
 }
