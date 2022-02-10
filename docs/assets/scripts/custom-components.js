@@ -97,7 +97,7 @@ class Sidebar extends HTMLElement {
               <a class="nav-link ${this.isLinkActive(
                 activeNav,
                 "introduction"
-              )}" href="docs/introduction.html">Introduction</a>
+              )}" href="/docs/introduction.html">Introduction</a>
             </li>
           </ul>
         </nav>
