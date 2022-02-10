@@ -3699,3 +3699,7 @@
 .spacer > * + * {
   margin-block-start: 1em;
 }
+
+.text-primary {
+  color: var(--color-blue-600) !important;
+}

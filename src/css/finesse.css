@@ -369,19 +369,28 @@ code {
   border: none;
 }
 
-.btn.btn-link {
-  color: var(--primary-color);
-  text-decoration: underline;
-  border: none;
-}
-
-.btn-flat {
+.btn.btn-flat {
   border: 0;
 }
 
-.btn-icon {
+.btn.btn-icon {
   background-color: transparent;
   border: none;
+}
+
+.btn.btn-raised {
+  box-shadow: var(--shadow-sm);
+}
+
+.btn.btn-float {
+  position: fixed;
+  inset-block-end: 10%;
+  inset-inline-end: 10%;
+  block-size: var(--spacing-48);
+  inline-size: var(--spacing-48);
+  box-shadow: var(--shadow-sm);
+  z-index: 999;
+  border-radius: var(--border-radius-round);
 }
 
 /* List Inline */
