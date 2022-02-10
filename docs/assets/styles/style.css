@@ -42,6 +42,7 @@ custom-sidebar {
 .card-container-demo,
 .badge-container-demo,
 .button-container-demo,
+.responsive-image-container-demo,
 .avatar-container-demo {
   display: flex;
   align-items: center;

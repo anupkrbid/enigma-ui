@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="responsive-images"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Responsive Images</h1>
+        <p>
+          Images in Finesse UI are made responsive by default so that it scales
+          with the parent element.
+        </p>
+        <hr />
+
+        <h2>Simple Responsive Images</h2>
+        <p>
+          Below is an examples of a responsive image. Images are responsive by
+          default in Finesse UI.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="responsive-image-container-demo">
+              <img
+                src="https://picsum.photos/1920/1080"
+                alt="responsive image example"
+              />
+
+              <!-- <img srcset="https://picsum.photos/300/200 1x, https://picsum.photos/200/200 2x" alt="" /> -->
+
+              <!-- art direction(change the image itself) with density switching  -->
+              <!-- <picture>
+                <source srcset="https://picsum.photos/200/300 1x" media="(min-width: 600px)"></source>
+                <img srcset="https://picsum.photos/200/100 1x" alt="" />
+              </picture> -->
+
+              <!-- Resolution switching, change the size of image -->
+              <!-- <img
+                src="https://picsum.photos/100"
+                srcset="
+                  https://picsum.photos/400 400w,
+                  https://picsum.photos/600 600w"
+                sizes="(min-width: 600px) 200px, 100px"
+              /> -->
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Rounded Images</h2>
+        <p>
+          Below are examples of rounded images. They can clip an image of any
+          size to create a rounded image. Add a
+          <code>.image-responsive-container</code> to a container and add an
+          <code>img</code> inside it. You can add
+          <code>.image-responsive-container-rounded</code> to create a rounded
+          corner. You can also add
+          <code>.image-responsive-container-large</code> to increase the size.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="responsive-image-container-demo">
+              <figure
+                class="image-responsive-container image-responsive-container-rounded"
+              >
+                <img
+                  src="https://picsum.photos/1920/1080"
+                  alt="responsive image example"
+                />
+              </figure>
+
+              <figure
+                class="image-responsive-container image-responsive-container-large image-responsive-container-rounded"
+              >
+                <img
+                  src="https://picsum.photos/1920/1080"
+                  alt="responsive image example"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cfigure%2520class%253D%2522image-responsive-container%2520image-responsive-container-rounded%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%2520%252F%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%2520class%253D%2522image-responsive-container%2520image-responsive-container-large%2520image-responsive-container-rounded%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%2520%252F%253E%250A%253C%252Ffigure%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
