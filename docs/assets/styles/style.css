@@ -48,6 +48,14 @@ custom-sidebar {
   gap: 1.5rem;
 }
 
+.alert-container-demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .card-container-demo > .card {
   max-inline-size: 15rem;
 }

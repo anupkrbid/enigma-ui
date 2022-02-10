@@ -275,64 +275,51 @@ code {
 
 .alert {
   block-size: 100%;
-  padding-block: var(--spacing-8);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-16);
+  padding-block: var(--spacing-16);
   padding-inline: var(--spacing-16);
-  border-radius: var(--border-radius-2);
+  border-radius: var(--border-radius-4);
+  border: 1px solid var(--border-color);
+}
+
+.alert .alert-icon {
+  padding-block-start: var(--spacing-4);
+}
+
+.alert .alert-content {
+  flex-grow: 1;
 }
 
 .alert.alert-primary {
-  color: var(--text-color-on-primary-color-bg);
-  background-color: var(--primary-color-light);
-  border: 1px solid var(--primary-color);
+  color: var(--color-blue-600);
+  background-color: var(--color-blue-100);
+  border: 1px solid var(--color-blue-600);
 }
 
 .alert.alert-secondary {
-  color: var(--text-color-on-secondary-color-bg);
-  background-color: var(--secondary-color-light);
-  border: 1px solid var(--secondary-color);
+  color: var(--color-purple-600);
+  background-color: var(--color-purple-100);
+  border: 1px solid var(--color-purple-600);
 }
 
 .alert.alert-success {
-  color: var(--text-color-on-success-color-bg);
-  background-color: var(--success-color-light);
-  border: 1px solid var(--success-color);
+  color: var(--color-green-600);
+  background-color: var(--color-green-100);
+  border: 1px solid var(--color-green-600);
 }
 
 .alert.alert-warning {
-  color: var(--text-color-on-warning-color-bg);
-  background-color: var(--warning-color-light);
-  border: 1px solid var(--warning-color);
+  color: var(--color-yellow-600);
+  background-color: var(--color-yellow-100);
+  border: 1px solid var(--color-yellow-600);
 }
 
-.alert.alert-error {
-  color: var(--text-color-on-error-color-bg);
-  background-color: var(--error-color-light);
-  border: 1px solid var(--error-color);
-}
-
-.alert.alert-primary-outlined {
-  color: var(--primary-color-dark);
-  border: 1px solid var(--primary-color);
-}
-
-.alert.alert-secondary-outlined {
-  color: var(--secondary-color-dark);
-  border: 1px solid var(--secondary-color);
-}
-
-.alert.alert-success-outlined {
-  color: var(--success-color-dark);
-  border: 1px solid var(--success-color);
-}
-
-.alert.alert-warning-outlined {
-  color: var(--warning-color-dark);
-  border: 1px solid var(--warning-color);
-}
-
-.alert.alert-error-outlined {
-  color: var(--error-color-dark);
-  border: 1px solid var(--error-color);
+.alert.alert-danger {
+  color: var(--color-rose-600);
+  background-color: var(--color-rose-100);
+  border: 1px solid var(--color-rose-600);
 }
 
 /* Button */
