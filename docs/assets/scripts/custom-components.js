@@ -147,6 +147,12 @@ class Sidebar extends HTMLElement {
                 "form-elements"
               )}" href="/docs/form-elements.html">Form Elements</a>
             </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "navigation"
+              )}" href="/docs/navigation.html">Navigation</a>
+            </li>
           </ul>
         </nav>
       </section>
