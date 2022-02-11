@@ -26,119 +26,81 @@
         <p>
           Forms can be composed of <code>input</code>, <code>select</code>,
           <code>textarea</code> elements, and other specialized input elements,
-          such as checkboxes, and radio buttons. The first example shows all the
-          form-controls available in one single form.
+          such as checkboxes, and radio buttons.
         </p>
         <hr />
 
         <h2>Inputs</h2>
         <p>
-          Below is an examples of a responsive image. Images are responsive by
-          default in Finesse UI.
+          Below is an examples that shows how inpus can show validation state.
+          Create a container with a class of <code>.form-group</code> which will
+          hold indevidual form elements. <code>.form-group</code> is used to
+          hold the main input and other addons. Adding
+          <code>.required</code> along with the <code>.label</code> class shows
+          an asterisk which indecated requied field.
+          <code>.input-group-prepend</code> and
+          <code>.input-group-append</code> is used to add addons on the left and
+          right side on the input. <code>.form-help-text</code> is used to show
+          the error messages or any info under the input. adding a class of
+          <code>.form-control-invalid</code> will show the invalid state of the
+          form.
         </p>
         <div class="panel">
           <div class="code-preview">
             <div class="form-container-demo">
-              <div class="field">
-                <label class="label">Username</label>
-                <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Email" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </p>
-                <p class="help is-success">This username is available</p>
-              </div>
+              <form novalidate>
+                <div class="form-group">
+                  <label>
+                    <span class="label required">Search</span>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"
+                          ><i class="fas fa-search"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control form-control-invalid"
+                        placeholder="Search"
+                        aria-describedby="inputGroupPrepend"
+                      />
+                      <button class="btn btn-primary">Submit</button>
+                      <small id="helpId" class="form-help-text"
+                        >We'll never share your search info with anyone
+                        else.</small
+                      >
+                    </div>
+                  </label>
+                </div>
 
-              <div class="input-group">
-                <span class="input-group-text">With textarea</span>
-                <textarea
-                  class="form-control"
-                  aria-label="With textarea"
-                  style="height: 81px"
-                ></textarea>
-              </div>
-
-              <div class="input-group mb-4">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Dollar amount (with dot and two decimal places)"
-                />
-              </div>
-
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Recipient's username"
-                  aria-label="Recipient's username with two button addons"
-                />
-                <button class="btn btn-primary-outlined" type="button">
-                  Button
-                </button>
-                <button class="btn btn-primary-outlined" type="button">
-                  Button
-                </button>
-              </div>
+                <div class="form-group">
+                  <label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend"
+                          >About You
+                        </span>
+                      </div>
+                      <textarea
+                        type="text"
+                        class="form-control"
+                        placeholder="Email"
+                        aria-describedby="inputGroupPrepend"
+                      ></textarea>
+                      <small id="helpId" class="form-help-text"
+                        >Additional info or help text goes here.</small
+                      >
+                    </div>
+                  </label>
+                </div>
+              </form>
             </div>
           </div>
           <div class="code-container">
             <div class="carbon-code-container">
               <iframe
                 class="carbon-code-iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=none&l=htmlmixed&width=900&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Source+Code+Pro&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%253E"
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h2>Rounded Images</h2>
-        <p>
-          Below are examples of rounded images. They can clip an image of any
-          size to create a rounded image. Add a
-          <code>.image-responsive-container</code> to a container and add an
-          <code>img</code> inside it. You can add
-          <code>.image-responsive-container-rounded</code> to create a rounded
-          corner. You can also add
-          <code>.image-responsive-container-large</code> to increase the size.
-        </p>
-        <div class="panel">
-          <div class="code-preview">
-            <div class="responsive-image-container-demo">
-              <figure
-                class="image-responsive-container image-responsive-container-rounded"
-              >
-                <img
-                  src="https://picsum.photos/1920/1080"
-                  alt="responsive image example"
-                />
-              </figure>
-
-              <figure
-                class="image-responsive-container image-responsive-container-large image-responsive-container-rounded"
-              >
-                <img
-                  src="https://picsum.photos/1920/1080"
-                  alt="responsive image example"
-                />
-              </figure>
-            </div>
-          </div>
-          <div class="code-container">
-            <div class="carbon-code-container">
-              <iframe
-                class="carbon-code-iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cfigure%2520class%253D%2522image-responsive-container%2520image-responsive-container-rounded%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%2520%252F%253E%250A%253C%252Ffigure%253E%250A%250A%253Cfigure%2520class%253D%2522image-responsive-container%2520image-responsive-container-large%2520image-responsive-container-rounded%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F1920%252F1080%2522%2520alt%253D%2522responsive%2520image%2520example%2522%2520%252F%253E%250A%253C%252Ffigure%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520novalidate%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label%2520required%2522%253ESearch%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-prepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupPrepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2520form-control-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520We%27ll%2520never%2520share%2520your%2520search%2520info%2520with%2520anyone%2520else.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-prepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupPrepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520About%2520You%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Type%2520all%2520you%2520want.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -147,7 +109,6 @@
         </div>
       </main>
     </section>
-
     <custom-footer></custom-footer>
     <script src="/src/js/finesse.js"></script>
     <script src="/docs/assets/scripts/custom-components.js"></script>
