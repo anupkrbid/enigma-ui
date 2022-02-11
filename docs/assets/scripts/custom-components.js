@@ -159,6 +159,12 @@ class Sidebar extends HTMLElement {
                 "modal"
               )}" href="/docs/modal.html">Modal</a>
             </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "toast"
+              )}" href="/docs/toast.html">Toast</a>
+            </li>
           </ul>
         </nav>
       </section>

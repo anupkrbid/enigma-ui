@@ -819,3 +819,36 @@ picture {
 .modal-overlay.modal-active {
   display: flow-root;
 }
+
+/* Toast */
+
+.toast {
+  position: fixed;
+  inset-block-start: 1%;
+  inset-inline-end: 1%;
+  background-color: var(--bg-color-light);
+  inline-size: clamp(18rem, 20vw, 30rem);
+  border-radius: var(--border-radius-8);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-8);
+  display: none;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.toast.toast-success {
+  color: var(--color-green-600);
+  background-color: var(--color-green-100);
+  border: 1px solid var(--color-green-600);
+}
+
+.toast-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.toast.toast-active {
+  display: flex;
+}
