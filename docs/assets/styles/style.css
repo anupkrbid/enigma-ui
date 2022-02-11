@@ -83,3 +83,16 @@ custom-sidebar {
   height: 100%;
   border: 0;
 }
+
+#demo-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-16);
+  text-align: center;
+}
+
+#demo-modal .check-container {
+  color: var(--color-green-600);
+}

@@ -8,6 +8,12 @@ const finesse = {
       element.style.display = "none";
     }
   },
+  openModal: function (modalRef) {
+    document.querySelector(modalRef).classList.add("modal-active");
+  },
+  closeModal: function (modalRef) {
+    document.querySelector(modalRef).classList.remove("modal-active");
+  },
 };
 
 // event lister to handle dropdown click
