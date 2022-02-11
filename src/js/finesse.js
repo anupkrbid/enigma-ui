@@ -14,6 +14,18 @@ const finesse = {
   closeModal: function (modalRef) {
     document.querySelector(modalRef).classList.remove("modal-active");
   },
+  toastTimeout: null,
+  showToastNotification: function (toastRef) {
+    document.querySelector(toastRef).classList.add("toast-active");
+    this.toastTimeout = setTimeout(() => {
+      this.hideToastNotification(toastRef);
+      clearTimeout(this.toastTimeout);
+    }, 3000);
+  },
+  hideToastNotification: function (toastRef) {
+    document.querySelector(toastRef).classList.remove("toast-active");
+    clearTimeout(this.toastTimeout);
+  },
 };
 
 // event lister to handle dropdown click
