@@ -491,6 +491,7 @@ code {
   display: none;
   border-radius: var(--spacing-2);
   padding: var(--spacing-8);
+  z-index: 1;
 }
 
 .dropdown-active .dropdown-menu {

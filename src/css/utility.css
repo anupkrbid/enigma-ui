@@ -1082,6 +1082,20 @@
   }
 }
 
+@media screen and (min-width: 64rem) {
+  .d-none-laptop-onwards {
+    display: none !important;
+  }
+
+  .d-block-laptop-onwards {
+    display: block !important;
+  }
+
+  .d-flex-laptop-onwards {
+    display: flex !important;
+  }
+}
+
 /* Flex Box */
 .flex-direction-row {
   flex-direction: row !important;
