@@ -3721,3 +3721,7 @@
 .text-muted {
   color: var(--text-color-muted) !important;
 }
+
+.bs-100 {
+  block-size: 100%;
+}

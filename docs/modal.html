@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="modal"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Modal</h1>
+        <p>
+          Modals are dialogs which can be used for forms, notifications,
+          lightboxes, and other custom content. This requires the
+          <strong>finesse.js</strong> to be imported.
+        </p>
+        <hr />
+
+        <h2>Simple Modal</h2>
+        <p>
+          This modal should be a direct child of the <code>body</code>. Create a
+          container with <code>.modal-overlay</code> and a
+          <code>.modal-container</code> inside it which will have 3 containers
+          <code>.modal-header</code> for the heading of the modal ,
+          <code>.modal-body</code> for any content the user wants to put which
+          is totally customizable and <code>.modal-actions</code> which will
+          have athe buttons to interact with the modal. Example shown below.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <button
+              class="btn btn-primary"
+              onclick="finesse.openModal('#demo-modal')"
+            >
+              Open Modal
+            </button>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522demo-modal%2522%2520class%253D%2522modal-overlay%2522%2520tabindex%253D%2522-1%2522%2520role%253D%2522dialog%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-container%2522%2520role%253D%2522document%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522modal-header%2522%253EPayment%2520Modal%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522check-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520fa-5x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%253EThank%2520You%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EYour%2520payment%2520was%2520successful%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-actions%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520btn-primary%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520onclick%253D%2522finesse.closeModal%28%27%2523demo-modal%27%29%2522%250A%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Okay%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <custom-footer></custom-footer>
+
+    <!-- Modal -->
+    <div id="demo-modal" class="modal-overlay" tabindex="-1" role="dialog">
+      <div class="modal-container" role="document">
+        <h3 class="modal-header">Payment Modal</h3>
+        <div class="modal-body">
+          <div class="check-container">
+            <i class="fas fa-check-circle fa-5x"></i>
+          </div>
+          <h4>Thank You</h4>
+          <p>Your payment was successful</p>
+        </div>
+
+        <div class="modal-actions">
+          <button
+            class="btn btn-primary"
+            onclick="finesse.closeModal('#demo-modal')"
+          >
+            Okay
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
