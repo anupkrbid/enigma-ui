@@ -3703,3 +3703,7 @@
 .text-primary {
   color: var(--color-blue-600) !important;
 }
+
+.text-muted {
+  color: var(--text-color-muted) !important;
+}

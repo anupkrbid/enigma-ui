@@ -118,7 +118,7 @@
   /* Text Colours */
   --text-color-white: #ffffff;
   --text-color: rgba(0, 0, 0, 0.85);
-  --muted-text-color: rgba(0, 0, 0, 0.6);
+  --text-color-muted: rgba(0, 0, 0, 0.6);
   --text-color-light: rgba(0, 0, 0, 0.7);
   --body-bg-color: var(--bg-color-light);
   --body-bg-image: none;
