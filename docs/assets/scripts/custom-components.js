@@ -144,8 +144,8 @@ class Sidebar extends HTMLElement {
             <li>
               <a class="nav-link ${this.isLinkActive(
                 activeNav,
-                "forms"
-              )}" href="/docs/forms.html">Forms</a>
+                "form-elements"
+              )}" href="/docs/form-elements.html">Form Elements</a>
             </li>
           </ul>
         </nav>
