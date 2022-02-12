@@ -59,6 +59,10 @@ custom-sidebar {
   gap: 1.5rem;
 }
 
+.list-container-demo > .list {
+  max-inline-size: 15rem;
+}
+
 .card-container-demo > .card {
   max-inline-size: 15rem;
 }
