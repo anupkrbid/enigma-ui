@@ -5,12 +5,14 @@
 
 Finesse UI is a Component Library that aims to help you build UI faster.
 
-![finess ui](https://user-images.githubusercontent.com/26072012/153698889-c2b6ba23-95f6-4164-8723-6be563811ba6.png)
+![finessui](https://user-images.githubusercontent.com/26072012/153700739-64d35d15-0b3e-4180-bbf5-e5089a1b97c7.png)
 
 # Installation Steps
 
 Include CSS file mentioned in [installation section](https://finesse-ui.netlify.app/pages/installation.html) in your head tag of html file.
 And you are ready to use this file.
+
+![usage](https://user-images.githubusercontent.com/26072012/153700855-f84a84ce-3f7b-4589-8f3b-281f6773842d.png)
 
 # Tech Stack
 
