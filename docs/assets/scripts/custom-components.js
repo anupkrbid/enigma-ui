@@ -25,7 +25,7 @@ class Header extends HTMLElement {
                   <a class="nav-link ${this.isLinkActive(
                     activeNav,
                     "documentation"
-                  )}" href="/docs/introduction.html">Documentation</a>
+                  )}" href="/docs/usage.html">Documentation</a>
                 </li>
               </ui>
             </div>
@@ -56,7 +56,7 @@ class Header extends HTMLElement {
                       <a class="nav-link ${this.isLinkActive(
                         activeNav,
                         "documentation"
-                      )}" href="/docs/introduction.html"
+                      )}" href="/docs/usage.html"
                         >Documentation</a
                       >
                     </li>
@@ -96,8 +96,8 @@ class Sidebar extends HTMLElement {
             <li>
               <a class="nav-link ${this.isLinkActive(
                 activeNav,
-                "introduction"
-              )}" href="/docs/introduction.html">Introduction</a>
+                "usage"
+              )}" href="/docs/usage.html">Usage</a>
             </li>
             <li>
               <a class="nav-link ${this.isLinkActive(
@@ -209,7 +209,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
     <footer class="footer">
       <div class="footer-header">
-        Made with ❤️ for developers by developers.
+        Made with <i class="fas fa-code"></i> and lots of ❤️ for developers by developers.
       </div>
       <ul class="list list-inline">
         <li>
