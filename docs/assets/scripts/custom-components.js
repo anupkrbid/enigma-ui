@@ -99,6 +99,12 @@ class Sidebar extends HTMLElement {
                 "introduction"
               )}" href="/docs/introduction.html">Introduction</a>
             </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "typography"
+              )}" href="/docs/typography.html">Typography</a>
+            </li>
           </ul>
         </nav>
         <hr />
