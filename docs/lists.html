@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="lists"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Lists</h1>
+        <p>
+          List are a flexible and powerful component for displaying a series of
+          content. Modify and extend them to support just about any content
+          within.
+        </p>
+
+        <hr />
+
+        <h2>Vertical Lists</h2>
+        <p>
+          Below are examples of a
+          <strong> vertical list</strong>. Add a <code>.list</code> class to a
+          <code>ol</code> or <code>ul</code> to create a liat. You can add
+          anything you want in the container its your choice.
+          <code>.list</code> dosn't have any width of it's own. it will take the
+          width of the container it is in.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="list-container-demo">
+              <ul class="list">
+                <li class="list-active">Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-active%2522%253EItem%25201%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <h2>Inline Lists</h2>
+        <p>
+          Below are examples of a
+          <strong> Inline list</strong>. Add a
+          <code>.list.list-inline</code> class to a <code>ol</code> or
+          <code>ul</code> to create a liat.You can add anything you want in the
+          container its your choice.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <ul class="list list-inline">
+              <li class="list-active">Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+            </ul>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520list-inline%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522list-active%2522%253EItem%25201%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25202%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25203%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25204%253C%252Fli%253E%250A%2520%2520%253Cli%253EItem%25205%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
