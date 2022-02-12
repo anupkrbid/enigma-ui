@@ -20,6 +20,16 @@ And you are ready to use this file.
 - CSS
 - JavaScript
 
+## Development
+
+Perform the following steps with these terminal commands.
+
+```
+npm install -g lite-server
+git clone https://github.com/anupkrbid/finesse-ui.git
+lite-server
+```
+
 **_Glad to see you here! Show some love by [starring](https://github.com/anupkrbid/finesse-ui/) this repo._**
 
 [![Facebook](https://img.shields.io/static/v1.svg?label=follow&message=@anupkrbid&color=grey&logo=facebook&style=flat&logoColor=white&colorA=blue)](https://www.facebook.com/anupkrbid)
