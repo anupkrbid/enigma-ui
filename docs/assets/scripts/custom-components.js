@@ -169,7 +169,7 @@ class Sidebar extends HTMLElement {
               <a class="nav-link ${this.isLinkActive(
                 activeNav,
                 "rating-system"
-              )}" href="/docs/star-rating.html">Rating System</a>
+              )}" href="/docs/rating-system.html">Rating System</a>
             </li>
           </ul>
         </nav>
