@@ -854,8 +854,11 @@ picture {
 }
 
 /* Rating System */
+
 .rating-system {
-  color: var(--color-yellow-600);
+  color: var(--color-gray-200);
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
 
 .rating-system input {
@@ -866,6 +869,6 @@ picture {
   cursor: pointer;
 }
 
-.rating-system input:checked + label ~ label {
-  color: var(--color-gray-200);
+.rating-system input:checked ~ label {
+  color: var(--color-yellow-600);
 }
