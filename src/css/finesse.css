@@ -204,6 +204,11 @@ code {
  * 10. Card
  * 11. Panel 
  * 12. Iamges
+ * 13. Form Elements
+ * 14. Modal
+ * 15. Toast
+ * 16. Rating System
+ * 17. Grid System
  */
 
 /* Avatar */
@@ -871,4 +876,59 @@ picture {
 
 .rating-system input:checked ~ label {
   color: var(--color-yellow-600);
+}
+
+/* Grid System */
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row > .col-1 {
+  flex: 0 0 calc(100% / 12 * 1);
+}
+
+.row > .col-2 {
+  flex: 0 0 calc(100% / 12 * 2);
+}
+
+.row > .col-3 {
+  flex: 0 0 calc(100% / 12 * 3);
+}
+
+.row > .col-4 {
+  flex: 0 0 calc(100% / 12 * 4);
+}
+
+.row > .col-5 {
+  flex: 0 0 calc(100% / 12 * 5);
+}
+
+.row > .col-6 {
+  flex: 0 0 calc(100% / 12 * 6);
+}
+
+.row > .col-7 {
+  flex: 0 0 calc(100% / 12 * 7);
+}
+
+.row > .col-8 {
+  flex: 0 0 calc(100% / 12 * 8);
+}
+
+.row > .col-9 {
+  flex: 0 0 calc(100% / 12 * 9);
+}
+
+.row > .col-10 {
+  flex: 0 0 calc(100% / 12 * 10);
+}
+
+.row > .col-11 {
+  flex: 0 0 calc(100% / 12 * 11);
+}
+
+.row > .col-12 {
+  flex: 0 0 calc(100% / 12 * 12);
 }

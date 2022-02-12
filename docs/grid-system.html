@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating System | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="grid-system"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Grid System</h1>
+        <p>
+          Fineese UI's grid system uses a rows, and columns to layout and align
+          content. It’s built with flexbox and is fully responsive. Below is an
+          example at how the grid comes together
+        </p>
+        <hr />
+
+        <h2>12 Column Grid System</h2>
+        <p>
+          Below is an example of a
+          <strong>12 column grid system</strong> created by erapping a
+          containing div with <code>.row</code> followed by adding divs with
+          <code>.col-${i}</code> where
+          <strong>i ranges from 1 - 12</strong> each row should only have a sum
+          of 12 adding more would wrap the containers that don't fit in a simgle
+          row as shown below.
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <div class="grid-container-demo">
+              <div class="row">
+                <div class="col-12">12</div>
+
+                <div class="col-11">11</div>
+                <div class="col-1">1</div>
+
+                <div class="col-10">10</div>
+                <div class="col-2">2</div>
+
+                <div class="col-9">9</div>
+                <div class="col-3">3</div>
+
+                <div class="col-8">8</div>
+                <div class="col-4">4</div>
+
+                <div class="col-7">7</div>
+                <div class="col-5">5</div>
+
+                <div class="col-6">6</div>
+                <div class="col-6">6</div>
+
+                <div class="col-4">4</div>
+                <div class="col-4">4</div>
+                <div class="col-4">4</div>
+
+                <div class="col-4">4</div>
+                <div class="col-5">5</div>
+                <div class="col-3">3</div>
+
+                <div class="col-5">5</div>
+                <div class="col-5">5</div>
+                <div class="col-2">2</div>
+              </div>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-12%2522%253E12%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-11%2522%253E11%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-1%2522%253E1%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-10%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-2%2522%253E2%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-9%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-3%2522%253E3%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-8%2522%253E8%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E4%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-7%2522%253E7%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253E5%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E6%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E6%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E4%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253E5%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-3%2522%253E3%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253E5%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-5%2522%253E5%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-2%2522%253E2%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>

@@ -50,6 +50,7 @@ custom-sidebar {
   gap: 1.5rem;
 }
 
+.grid-container-demo,
 .alert-container-demo {
   display: flex;
   flex-direction: column;
@@ -95,4 +96,11 @@ custom-sidebar {
 
 #demo-modal .check-container {
   color: var(--color-green-600);
+}
+
+div[class^="col-"] {
+  background-color: var(--color-blue-200);
+  border: 1px solid var(--color-blue-600);
+  text-align: center;
+  padding-block: var(--spacing-8);
 }

@@ -171,6 +171,12 @@ class Sidebar extends HTMLElement {
                 "rating-system"
               )}" href="/docs/rating-system.html">Rating System</a>
             </li>
+            <li>
+              <a class="nav-link ${this.isLinkActive(
+                activeNav,
+                "grid-system"
+              )}" href="/docs/grid-system.html">Grid System</a>
+            </li>
           </ul>
         </nav>
       </section>
