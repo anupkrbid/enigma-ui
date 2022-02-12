@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="typography"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Typography</h1>
+        <p>
+          Typography is the art and technique of arranging type to make written
+          language legible, readable and appealing when displayed.
+        </p>
+        <hr />
+
+        <h2>Headings</h2>
+        <p>
+          Heading tags are styles by default, you can get same result by using
+          classes also such as (<code>.h1</code>, <code>.h2</code>,
+          <code>.h3</code>, <code>.h4</code>, <code>.h5</code>,
+          <code>.h6</code>).
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <h1>I am a h1 tag, .h1</h1>
+
+            <h2>I am a h2 tag, .h2</h2>
+
+            <h3>I am a h3 tag, .h3</h3>
+
+            <h4>I am a h4 tag, .h4</h4>
+
+            <h5>I am a h5 tag, .h5</h5>
+
+            <h6>I am a h6 tag, .h6</h6>
+
+            <p>I am paragraph tag</p>
+
+            <small>I am a small tag</small>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Font Weight</h2>
+        <p>
+          There are utility classes to increase font weight
+          (<code>.fw-100</code>, <code>.fw-200</code>, <code>.fw-300</code>,
+          <code>.fw-400</code>,<code>.fw-500</code>, <code>.fw-600</code>,
+          <code>.fw-700</code>, <code>.fw-800</code>,<code>.fw-900</code>)
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <p class="fw-900">I am paragraph with font weight 900, .fw-900</p>
+            <p class="fw-800">I am paragraph with font weight 900, .fw-800</p>
+            <p class="fw-700">I am paragraph with font weight 900, .fw-700</p>
+            <p class="fw-600">I am paragraph with font weight 900, .fw-600</p>
+            <p class="fw-500">I am paragraph with font weight 900, .fw-500</p>
+            <p class="fw-400">I am paragraph with font weight 900, .fw-400</p>
+            <p class="fw-300">I am paragraph with font weight 900, .fw-300</p>
+            <p class="fw-200">I am paragraph with font weight 900, .fw-200</p>
+            <p class="fw-100">I am paragraph with font weight 900, .fw-100</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2>Font Size</h2>
+        <p>
+          There are utility classes to increase font sizes (<code>.fs-1</code>,
+          <code>.fs-2</code>, <code>.fs-3</code>, <code>.fs-4</code>,
+          <code>.fs-5</code>, <code>fs-6</code>).
+        </p>
+        <div class="panel">
+          <div class="code-preview">
+            <p class="fs-1">I am paragraph with font size as h1, .fs-1</p>
+            <p class="fs-2">I am paragraph with font size as h2, .fs-2</p>
+            <p class="fs-3">I am paragraph with font size as h3, .fs-3</p>
+            <p class="fs-4">I am paragraph with font size as h4, .fs-4</p>
+            <p class="fs-5">I am paragraph with font size as h5, .fs-5</p>
+            <p class="fs-6">I am paragraph with font size as h6, .fs-6</p>
+          </div>
+        </div>
+        <hr />
+        <h2>Text Utility</h2>
+        There are utility classes to show differnt etxt colours
+        (<code>.text-primary</code>, <code>.text-muted</code>).
+        <div class="panel">
+          <div class="code-preview">
+            <p class="text-primary">
+              I am paragraph with primary text-color, .text-primary
+            </p>
+            <p class="text-muted">
+              I am paragraph with gray text-color, .text-muted
+            </p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
