@@ -16,7 +16,7 @@ class Header extends HTMLElement {
               </button>
               <!-- <div class="nav-brand">fιиєѕѕє υι</div>-->
               <div class="nav-brand">Finesse UI</div>
-              <ui class="list list-inline nav-content-hidden d-flex-tablet-onwards">
+              <ui class="list list-inline list-items-spaced nav-content-hidden d-flex-tablet-onwards">
                 <li><a class="nav-link ${this.isLinkActive(
                   activeNav,
                   "home"
@@ -92,7 +92,7 @@ class Sidebar extends HTMLElement {
       <section class="sidebar pb-16 pi-16">
         <h5>Getting Started</h5>
         <nav class="nav mbs-16">
-          <ul class="list">
+          <ul class="list list-items-gapped">
             <li>
               <a class="nav-link ${this.isLinkActive(
                 activeNav,
@@ -110,7 +110,7 @@ class Sidebar extends HTMLElement {
         <hr />
         <h5>Components</h5>
         <nav class="nav mbs-16">
-          <ul class="list">
+          <ul class="list list-items-gapped">
             <li>
               <a class="nav-link ${this.isLinkActive(
                 activeNav,

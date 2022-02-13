@@ -3704,24 +3704,3 @@
     flex: 0 0 auto !important;
   }
 }
-
-/* Width */
-.is-100 {
-  inline-size: 100% !important;
-}
-
-.spacer > * + * {
-  margin-block-start: 1em;
-}
-
-.text-primary {
-  color: var(--color-blue-600) !important;
-}
-
-.text-muted {
-  color: var(--text-color-muted) !important;
-}
-
-.bs-100 {
-  block-size: 100%;
-}

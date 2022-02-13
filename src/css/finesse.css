@@ -248,6 +248,7 @@ code {
 .badge-container {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .badge-container .badge {
@@ -271,8 +272,8 @@ code {
   font-size: var(--font-size-8);
   font-weight: var(--font-weight-600);
   border-radius: var(--border-radius-2);
-  color: var(--text-color-white);
-  background-color: var(--color-gray-400);
+  color: var(--color-blue-600);
+  background-color: var(--color-blue-100);
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -330,9 +331,14 @@ code {
 }
 
 /* Button */
+
 .btn {
   border: 1px solid var(--gray-color-dark);
-  display: inline-block;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-4);
+  align-items: center;
+  justify-content: center;
   font-weight: var(--font-weight-light);
   line-height: var(--line-height);
   color: #212529;
@@ -409,10 +415,13 @@ code {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: var(--spacing-4);
 }
 
-.list > * {
+.list.list-items-gapped {
+  gap: var(--spacing-8);
+}
+
+.list.list-items-spaced > li {
   padding-block: var(--spacing-8);
   padding-inline: var(--spacing-16);
 }
@@ -426,35 +435,45 @@ code {
 .list-inline {
   align-items: center;
   flex-direction: row;
-  gap: var(--spacing-32);
 }
 
 /* Nav */
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-32);
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-8);
   background-color: inherit;
 }
 
+.nav-brand-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .nav-content {
   display: flex;
   align-items: center;
-  gap: var(--spacing-16);
+  flex-wrap: nowrap;
+  gap: var(--spacing-4);
+  flex: 1 1 100%;
 }
 
 .nav-content-hidden {
   display: none;
 }
 
-.nav-content-left {
+.nav-content-start {
   justify-content: flex-start;
 }
 
-.nav-content-right {
+.nav-content-middle {
+  justify-content: flex-end;
+}
+
+.nav-content-end {
   justify-content: flex-end;
 }
 
@@ -892,6 +911,7 @@ picture {
 
 .row {
   display: flex;
+  width: 100%;
   flex-flow: row wrap;
 }
 
@@ -941,4 +961,43 @@ picture {
 
 .row > .col-12 {
   flex: 0 0 calc(100% / 12 * 12);
+}
+
+/* Utility */
+
+/* Width */
+.is-100 {
+  inline-size: 100% !important;
+}
+
+.spacer > * + * {
+  margin-block-start: 1em;
+}
+
+.text-primary {
+  color: var(--color-blue-600) !important;
+}
+
+.text-muted {
+  color: var(--text-color-muted) !important;
+}
+
+.text-align-end {
+  text-align: end !important;
+}
+
+.bs-100 {
+  block-size: 100%;
+}
+
+@media screen and (max-width: 48rem) {
+  .d-none-below-laptop-mini {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .d-none-above-laptop-mini {
+    display: none !important;
+  }
 }
