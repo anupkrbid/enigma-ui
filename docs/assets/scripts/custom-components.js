@@ -228,6 +228,12 @@ class Sidebar extends HTMLElement {
                 "grid-system"
               )}" href="/docs/grid-system.html">Grid System</a>
             </li>
+            <li>
+            <a class="nav-link ${this.isLinkActive(
+              activeNav,
+              "carousel"
+            )}" href="/docs/carousel.html">Carousel</a>
+          </li>
           </ul>
         </nav>
       </section>

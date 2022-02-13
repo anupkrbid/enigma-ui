@@ -209,6 +209,7 @@ code {
  * 15. Toast
  * 16. Rating System
  * 17. Grid System
+ * 18. Carousel
  */
 
 /* Avatar */
@@ -945,6 +946,55 @@ picture {
 
 .row > .col-12 {
   flex: 0 0 calc(100% / 12 * 12);
+}
+
+/* Carousel */
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.carousel figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 /* Utility */
