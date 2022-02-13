@@ -1001,3 +1001,15 @@ picture {
     display: none !important;
   }
 }
+
+@media screen and (max-width: 80rem) {
+  .d-none-below-desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .d-none-above-desktop {
+    display: none !important;
+  }
+}

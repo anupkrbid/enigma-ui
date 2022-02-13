@@ -6,57 +6,94 @@ class Header extends HTMLElement {
   connectedCallback() {
     const activeNav = this.attributes.active.value;
     this.innerHTML = `
-        <header>
-          <nav class="nav">
-            <div class="nav-content nav-content-left">
-              <button class="btn btn-icon ${this.hideSidebarTrigger(
-                activeNav
-              )}" onclick="finesse.toggleSidebar('#sidebar')">
-                <i class="fas fa-bars"></i>
-              </button>
-              <!-- <div class="nav-brand">fιиєѕѕє υι</div>-->
-              <div class="nav-brand">Finesse UI</div>
-              <ui class="list list-inline list-items-spaced nav-content-hidden d-flex-tablet-onwards">
-                <li><a class="nav-link ${this.isLinkActive(
-                  activeNav,
-                  "home"
-                )}" href="/index.html">Home</a></li>
+    <header>
+      <nav class="nav">
+        <div class="nav-brand-container">
+          <button
+            class="btn btn-icon ${this.hideSidebarTrigger(
+              activeNav
+            )} d-none-above-laptop-mini"
+            onclick="finesse.toggleSidebar('#sidebar')"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="nav-brand">Finess UI</div>
+        </div>
+
+        <!-- For Laptop and Above -->
+        <div class="nav-content d-none-below-laptop-mini">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <ui class="list list-inline list-items-spaced">
                 <li>
-                  <a class="nav-link ${this.isLinkActive(
-                    activeNav,
-                    "documentation"
-                  )}" href="/docs/usage.html">Documentation</a>
+                  <a
+                    class="nav-link ${this.isLinkActive(activeNav, "home")}"
+                    href="/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-link ${this.isLinkActive(
+                      activeNav,
+                      "documentation"
+                    )}"
+                    href="/docs/usage.html"
+                    >Documentation</a
+                  >
                 </li>
               </ui>
             </div>
-            <div class="nav-content nav-content-right nav-content-hidden d-block-tablet-onwards">
-              <button class="btn btn-icon">
-                <i class="fas fa-adjust"></i>
-              </button>
-              <button class="btn btn-primary">
-                 Download
-              </button>
+
+            <div class="col-6">
+              <ul
+                class="list list-inline list-items-gapped d-flex justify-content-flex-end"
+              >
+                <li>
+                  <button class="btn btn-icon">
+                    <i class="fas fa-adjust"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="btn btn-primary">Download</button>
+                </li>
+              </ul>
             </div>
-            <div class="nav-content nav-content-mobile d-none-tablet-onwards">
+          </div>
+        </div>
+
+        <!-- For Below Laptop -->
+        <div
+          class="nav-content d-flex justify-content-flex-end d-none-above-laptop-mini"
+        >
+          <ul class="list list-inline list-items-gapped">
+            <li>
               <button class="btn btn-icon">
                 <i class="fas fa-adjust"></i>
               </button>
+            </li>
+            <li>
               <div class="dropdown" data-dropdown>
                 <button class="btn" data-dropdown-trigger>
                   Menu
-                  <i class="fas fa-caret-square-down"></i>
+                  <i class="fas fa-caret-square-down" data-dropdown-trigger></i>
                 </button>
                 <div class="dropdown-menu">
-                  <ul class="list align-items-stretch">
-                    <li><a class="nav-link ${this.isLinkActive(
-                      activeNav,
-                      "home"
-                    )}" href="/index.html">Home</a></li>
+                  <ul class="list align-items-stretch list-items-gapped">
                     <li>
-                      <a class="nav-link ${this.isLinkActive(
-                        activeNav,
-                        "documentation"
-                      )}" href="/docs/usage.html"
+                      <a
+                        class="nav-link ${this.isLinkActive(activeNav, "home")}"
+                        href="/index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="nav-link ${this.isLinkActive(
+                          activeNav,
+                          "documentation"
+                        )}"
+                        href="/docs/usage.html"
                         >Documentation</a
                       >
                     </li>
@@ -66,9 +103,11 @@ class Header extends HTMLElement {
                   </ul>
                 </div>
               </div>
-            </div>
-          </nav>
-        </header>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
       `;
   }
 
@@ -209,9 +248,9 @@ class Footer extends HTMLElement {
     this.innerHTML = `
     <footer class="footer">
       <div class="footer-header">
-        Made with <i class="fas fa-code"></i> and lots of ❤️ for developers by developers.
+        Made with <i class="fas fa-code"></i> and lots of ❤️ for developers by a developer.
       </div>
-      <ul class="list list-inline">
+      <ul class="list list-inline list-items-gapped">
         <li>
           <a target="_blank" href="https://github.com/anupkrbid"
             ><i class="fab fa-github-square"></i></i
