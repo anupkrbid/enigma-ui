@@ -34,41 +34,35 @@
         <p>
           Below are examples of a simple responsive navigation using the
           <code>.nav</code> class. This is just a wrapper which lets you add
-          brand name using the <code>.brand-name</code> class. And you can add
-          links in the navigation using <code>.nav-link</code> and
-          <code>.nav-link-active</code> to highlight the active link. The
-          internal responsivenes is on the dev to implmented as demonstrated.
+          brand name using the <code>.brand-name</code> class which should be
+          inside a <code>.nav-brand-container</code>. And you can add links in
+          the navigation using <code>.nav-link</code> and a
+          <code>.nav-content</code> as sibling to show rest of the navigation
+          links and <code>.nav-link-active</code> to highlight the active link.
+          The internal responsivenes is on the dev to implmented as
+          demonstrated.
         </p>
         <div class="panel">
           <div class="code-preview">
             <nav class="nav">
-              <div class="nav-content nav-content-left">
-                <div class="nav-brand">Brand Name</div>
-                <ui
-                  class="list list-inline nav-content-hidden d-flex-laptop-onwards"
+              <div class="nav-brand-container">
+                <button
+                  class="btn btn-icon d-none-above-desktop"
+                  onclick="finesse.toggleSidebar('#sidebar')"
                 >
-                  <li><a class="nav-link" href="/index.html">Home</a></li>
-                  <li>
-                    <a class="nav-link nav-link-active" href="/docs/usage.html"
-                      >Documentation</a
-                    >
-                  </li>
-                </ui>
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-brand">Brand</div>
               </div>
-              <div
-                class="nav-content nav-content-right nav-content-hidden d-block-laptop-onwards"
-              >
-                <button class="btn btn-primary">Download</button>
-              </div>
-              <div class="nav-content nav-content-mobile d-none-laptop-onwards">
-                <div class="dropdown" data-dropdown>
-                  <button class="btn" data-dropdown-trigger>
-                    Menu
-                    <i class="fas fa-caret-square-down"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <ul class="list align-items-stretch">
-                      <li><a class="nav-link" href="/index.html">Home</a></li>
+
+              <!-- For Laptop and Above -->
+              <div class="nav-content d-none-below-desktop">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <ui class="list list-inline list-items-spaced">
+                      <li>
+                        <a class="nav-link" href="/index.html">Home</a>
+                      </li>
                       <li>
                         <a
                           class="nav-link nav-link-active"
@@ -76,12 +70,67 @@
                           >Documentation</a
                         >
                       </li>
+                    </ui>
+                  </div>
+
+                  <div class="col-6">
+                    <ul
+                      class="list list-inline list-items-gapped d-flex justify-content-flex-end"
+                    >
                       <li>
-                        <button class="btn btn-primary is-100">Download</button>
+                        <button class="btn btn-icon">
+                          <i class="fas fa-adjust"></i>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="btn btn-primary">Download</button>
                       </li>
                     </ul>
                   </div>
                 </div>
+              </div>
+
+              <!-- For Below Laptop -->
+              <div
+                class="nav-content d-flex justify-content-flex-end d-none-above-desktop"
+              >
+                <ul class="list list-inline list-items-gapped">
+                  <li>
+                    <button class="btn btn-icon">
+                      <i class="fas fa-adjust"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <div class="dropdown" data-dropdown>
+                      <button class="btn" data-dropdown-trigger>
+                        Menu
+                        <i
+                          class="fas fa-caret-square-down"
+                          data-dropdown-trigger
+                        ></i>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul class="list align-items-stretch list-items-gapped">
+                          <li>
+                            <a class="nav-link" href="/index.html">Home</a>
+                          </li>
+                          <li>
+                            <a
+                              class="nav-link nav-link-active"
+                              href="/docs/usage.html"
+                              >Documentation</a
+                            >
+                          </li>
+                          <li>
+                            <button class="btn btn-primary is-100">
+                              Download
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </nav>
           </div>
@@ -89,7 +138,7 @@
             <div class="carbon-code-container">
               <iframe
                 class="carbon-code-iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-content%2520nav-content-left%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2522%253EBrand%2520Name%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cui%2520class%253D%2522list%2520list-inline%2520nav-content-hidden%2520d-flex-laptop-onwards%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%252Findex.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Home%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2520nav-link-active%2522%2520href%253D%2522%252Fdocs%252Fintroduction.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Documentation%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fui%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-content%2520nav-content-right%2520nav-content-hidden%2520d-block-laptop-onwards%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EDownload%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-content%2520nav-content-mobile%2520d-none-laptop-onwards%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2522%2520data-dropdown%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520data-dropdown-trigger%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Menu%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-caret-square-down%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2520align-items-stretch%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%252Findex.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Home%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2520nav-link-active%2522%2520href%253D%2522%252Fdocs%252Fintroduction.html%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Documentation%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520is-100%2522%253EDownload%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand-container%2522%253E%250A%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520btn-icon%2520d-none-above-desktop%2522%250A%2520%2520%2520%2520%2520%2520onclick%253D%2522finesse.toggleSidebar%28%27%2523sidebar%27%29%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2522%253EBrand%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253C%21--%2520For%2520Laptop%2520and%2520Above%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-content%2520d-none-below-desktop%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522row%2520align-items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cui%2520class%253D%2522list%2520list-inline%2520list-items-spaced%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%252Findex.html%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522nav-link%2520nav-link-active%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520href%253D%2522%252Fdocs%252Fusage.html%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253EDocumentation%253C%252Fa%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fui%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522list%2520list-inline%2520list-items-gapped%2520d-flex%2520justify-content-flex-end%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-adjust%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EDownload%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253C%21--%2520For%2520Below%2520Laptop%2520--%253E%250A%2520%2520%253Cdiv%250A%2520%2520%2520%2520class%253D%2522nav-content%2520d-flex%2520justify-content-flex-end%2520d-none-above-desktop%2522%250A%2520%2520%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2520list-inline%2520list-items-gapped%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-adjust%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2522%2520data-dropdown%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520data-dropdown-trigger%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Menu%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522fas%2520fa-caret-square-down%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520data-dropdown-trigger%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2520align-items-stretch%2520list-items-gapped%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%252Findex.html%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
