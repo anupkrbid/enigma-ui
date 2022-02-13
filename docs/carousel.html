@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel | Finesse UI</title>
+    <meta name="author" content="Anup Kumar Bid" />
+    <meta
+      name="description"
+      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+    />
+    <link rel="stylesheet" href="/docs/assets/styles/style.css" />
+  </head>
+  <body class="d-flex flex-direction-column justify-content-space-between">
+    <custom-header active="documentation"></custom-header>
+
+    <section class="flex-grow-1 align-self-flex-start d-flex container-desktop">
+      <custom-sidebar
+        id="sidebar"
+        class="sidebar-visible-tablet-onwards"
+        active="carousel"
+      ></custom-sidebar>
+      <main class="flex-grow-1 pb-16 pi-16 spacer">
+        <h1>Carousel</h1>
+        <p>
+          A slideshow component for cycling through elements—images or slides of
+          text—like a carousel
+        </p>
+        <hr />
+
+        <h2>Slide Only</h2>
+        <p>
+          Below are examples of a carousel with slides only. Add the
+          <code>.carousel</code> class on a div containing <code>img</code> tags
+          in a <code>figure</code> tag. Currently it only supports 4 images and
+          the last and first image should be same.
+        </p>
+
+        <div class="panel">
+          <div class="code-preview">
+            <div class="carousel">
+              <figure>
+                <img src="http://placehold.it/1151x576&text=image1" />
+                <img src="http://placehold.it/1151x576&text=image2" />
+                <img src="http://placehold.it/1151x576&text=image3" />
+                <img src="http://placehold.it/1151x576&text=image4" />
+                <img src="http://placehold.it/1151x576&text=image1" />
+              </figure>
+            </div>
+          </div>
+          <div class="code-container">
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522carousel%2522%253E%250A%2520%2520%253Cfigure%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F1151x576%2526text%253Dimage1%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F1151x576%2526text%253Dimage2%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F1151x576%2526text%253Dimage3%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F1151x576%2526text%253Dimage4%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522http%253A%252F%252Fplacehold.it%252F1151x576%2526text%253Dimage1%2522%2520%252F%253E%250A%2520%2520%253C%252Ffigure%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <custom-footer></custom-footer>
+    <script src="/src/js/finesse.js"></script>
+    <script src="/docs/assets/scripts/custom-components.js"></script>
+    <script src="/docs/assets/scripts/script.js"></script>
+  </body>
+</html>
