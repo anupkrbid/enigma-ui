@@ -843,8 +843,8 @@ form {
   inline-size: 95%;
   position: absolute;
   inset-inline-start: 50%;
-  inset-block-start: 20%;
-  transform: translate(-50%);
+  inset-block-start: 50%;
+  transform: translate(-50%, -50%);
   border-radius: var(--border-radius-8);
   padding: var(--spacing-32);
   display: flex;
@@ -854,6 +854,7 @@ form {
 
 .modal-container .modal-header {
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .modal-container .modal-body {
@@ -868,12 +869,6 @@ form {
 
 .modal-overlay.modal-active {
   display: flow-root;
-}
-
-@media screen and (max-width: 40rem) {
-  .modal-container {
-    inset-block-start: 10%;
-  }
 }
 
 @media screen and (min-width: 30rem) {
