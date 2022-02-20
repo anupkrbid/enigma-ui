@@ -821,8 +821,7 @@ picture {
 
 .modal-container {
   background-color: var(--bg-color-light);
-  inline-size: clamp(18rem, 40vw, 30rem);
-  block-size: 50vh;
+  inline-size: 95%;
   position: absolute;
   inset-inline-start: 50%;
   inset-block-start: 20%;
@@ -849,6 +848,42 @@ picture {
 
 .modal-overlay.modal-active {
   display: flow-root;
+}
+
+@media screen and (min-width: 30rem) {
+  .modal-container {
+    inline-size: 90%;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .modal-container {
+    inline-size: 80%;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .modal-container {
+    inline-size: 70%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .modal-container {
+    inline-size: 60%;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .modal-container {
+    inline-size: 50%;
+  }
+}
+
+@media screen and (min-width: 96rem) {
+  .modal-container {
+    inline-size: 40%;
+  }
 }
 
 /* Toast */
