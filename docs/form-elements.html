@@ -40,8 +40,10 @@
           an asterisk which indecated requied field.
           <code>.input-group-prepend</code> and
           <code>.input-group-append</code> is used to add addons on the left and
-          right side on the input. <code>.form-help-text</code> is used to show
-          the error messages or any info under the input. adding a class of
+          right side on the input. <code>.form-control-icon</code> is used to
+          place a icon on the right side of the form control.
+          <code>.form-help-text</code> is used to show the error messages or any
+          info under the input. adding a class of
           <code>.form-control-invalid</code> will show the invalid state of the
           form.
         </p>
@@ -106,6 +108,70 @@
                     max="5000"
                   />
                 </div>
+
+                <div class="form-group">
+                  <label>
+                    <span class="label">Quantity</span>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="input-group-text" id="inputGroupPrepend">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <input
+                        type="number"
+                        step="1"
+                        min="1"
+                        class="form-control"
+                        placeholder="Quantity"
+                        aria-describedby="inputGroupPrepend"
+                      />
+                      <div class="input-group-append">
+                        <button class="input-group-text" id="inputGroupAppend">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label>
+                    <span class="label">Email</span>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control form-control-invalid"
+                        placeholder="Email"
+                        aria-describedby="inputGroupPrepend"
+                      />
+                      <small id="helpId" class="form-help-text"
+                        >Additional info or help text goes here.</small
+                      >
+                    </div>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label>
+                    <span class="label">Password</span>
+                    <div class="input-group">
+                      <button class="btn btn-icon form-control-icon">
+                        <i class="fas fa-eye"></i>
+                      </button>
+                      <input
+                        type="password"
+                        class="form-control form-control-invalid"
+                        placeholder="Password"
+                        aria-describedby="inputGroupPrepend"
+                      />
+
+                      <small id="helpId" class="form-help-text"
+                        >Password required.</small
+                      >
+                    </div>
+                  </label>
+                </div>
               </form>
             </div>
           </div>
@@ -114,6 +180,14 @@
               <iframe
                 class="carbon-code-iframe"
                 src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520novalidate%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label%2520required%2522%253ESearch%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-prepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupPrepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2520form-control-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Search%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ESubmit%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520We%27ll%2520never%2520share%2520your%2520search%2520info%2520with%2520anyone%2520else.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-prepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupPrepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520About%2520You%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Additional%2520info%2520or%2520help%2520text%2520goes%2520here.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522price%2522%253ESlider%2520%280%2520to%25205000%29%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520id%253D%2522price%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2522%250A%2520%2520%2520%2520%2520%2520type%253D%2522range%2522%250A%2520%2520%2520%2520%2520%2520name%253D%2522price%2522%250A%2520%2520%2520%2520%2520%2520step%253D%2522500%2522%250A%2520%2520%2520%2520%2520%2520min%253D%2522500%2522%250A%2520%2520%2520%2520%2520%2520max%253D%25225000%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <div class="carbon-code-container">
+              <iframe
+                class="carbon-code-iframe"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cform%2520novalidate%253E%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label%2522%253EQuantity%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-prepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupPrepend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522number%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520step%253D%25221%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253D%25221%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Quantity%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group-append%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522input-group-text%2522%2520id%253D%2522inputGroupAppend%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label%2522%253EEmail%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2520form-control-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Additional%2520info%2520or%2520help%2520text%2520goes%2520here.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label%2522%253EPassword%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520form-control-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-eye%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-control%2520form-control-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520aria-describedby%253D%2522inputGroupPrepend%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520id%253D%2522helpId%2522%2520class%253D%2522form-help-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Password%2520required.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fform%253E"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>

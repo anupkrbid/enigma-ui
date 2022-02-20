@@ -331,6 +331,10 @@ code {
 
 /* Button */
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   border: 1px solid var(--gray-color-dark);
   display: inline-flex;
@@ -600,7 +604,7 @@ code {
 }
 
 .card .card-description-action {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 .card.card-landscape .card-description-action {
@@ -713,6 +717,10 @@ picture {
 
 /* Form Elements */
 
+form {
+  inline-size: 100%;
+}
+
 .form-group {
   margin-block-end: var(--spacing-16);
 }
@@ -737,6 +745,16 @@ picture {
   border: 1px solid var(--border-color);
   border-radius: var(--spacing-4);
   min-block-size: var(--spacing-28);
+}
+
+.form-control-icon {
+  position: absolute;
+  margin-block: var(--spacing-6);
+  inset-inline-end: var(--spacing-16);
+}
+
+.form-control-icon + .form-control {
+  padding-inline-end: var(--spacing-40);
 }
 
 .form-help-text {
@@ -827,9 +845,10 @@ picture {
   inset-block-start: 20%;
   transform: translate(-50%);
   border-radius: var(--border-radius-8);
-  padding: var(--spacing-16);
+  padding: var(--spacing-32);
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-24);
 }
 
 .modal-container .modal-header {
@@ -850,10 +869,15 @@ picture {
   display: flow-root;
 }
 
+@media screen and (max-width: 40rem) {
+  .modal-container {
+    inset-block-start: 10%;
+  }
+}
+
 @media screen and (min-width: 30rem) {
   .modal-container {
     inline-size: 90%;
-    inset-block-start: 10%;
   }
 }
 
@@ -1475,6 +1499,16 @@ picture {
 
 /* Padding */
 
+.p-0 {
+  padding-block: var(--spacing-0) !important;
+  padding-inline: var(--spacing-0) !important;
+}
+
+.p-16 {
+  padding-block: var(--spacing-16) !important;
+  padding-inline: var(--spacing-16) !important;
+}
+
 .pb-0 {
   padding-block: var(--spacing-0) !important;
 }
@@ -1999,6 +2033,11 @@ picture {
 }
 
 /* Width */
+
+.bs-100 {
+  block-size: 100%;
+}
+
 .is-100 {
   inline-size: 100% !important;
 }
@@ -2015,12 +2054,12 @@ picture {
   color: var(--text-color-muted) !important;
 }
 
-.text-align-end {
-  text-align: end !important;
+.text-align-center {
+  text-align: center !important;
 }
 
-.bs-100 {
-  block-size: 100%;
+.text-align-end {
+  text-align: end !important;
 }
 
 @media screen and (max-width: 48rem) {
