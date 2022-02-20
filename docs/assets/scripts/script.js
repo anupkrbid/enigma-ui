@@ -1,6 +1,6 @@
 function download() {
-  var cssFile = "https://finesse-ui.netlify.app/src/css/finesse.css";
-  var jsFile = "https://finesse-ui.netlify.app/src/js/finesse.js";
+  var cssFile = "https://enigma-ui.netlify.app/src/css/enigma.css";
+  var jsFile = "https://enigma-ui.netlify.app/src/js/enigma.js";
   var cssEl = document.createElement("a");
   var jsEl = document.createElement("a");
 

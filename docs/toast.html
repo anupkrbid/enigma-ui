@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toast | Finesse UI</title>
+    <title>Toast | Enigma UI</title>
     <meta name="author" content="Anup Kumar Bid" />
     <meta
       name="description"
-      content="Finesse UI is a simple CSS frameowrk to kick start your frontend project"
+      content="Enigma UI is a simple CSS frameowrk to kick start your frontend project"
     />
     <link rel="stylesheet" href="/docs/assets/styles/style.css" />
   </head>
@@ -29,7 +29,7 @@
           This component can be used as Toast as well. Toast is mostly used to
           show feedback message. Snackbar is to used show message that need user
           action. This requires the
-          <strong>finesse.js</strong> to be imported.
+          <strong>enigma.js</strong> to be imported.
         </p>
         <hr />
 
@@ -47,7 +47,7 @@
           <div class="code-preview">
             <button
               class="btn btn-primary"
-              onclick="finesse.showToastNotification('#demo-toast')"
+              onclick="enigma.showToastNotification('#demo-toast')"
             >
               Show Toast
             </button>
@@ -56,7 +56,7 @@
             <div class="carbon-code-container">
               <iframe
                 class="carbon-code-iframe"
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522demo-toast%2522%2520class%253D%2522toast%2520toast-success%2522%2520role%253D%2522dialog%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%2520role%253D%2522document%2522%253E%250A%2520%2520%2520%2520%253Cstrong%253EThank%2520You%253C%252Fstrong%253E%250A%2520%2520%2520%2520%253Csmall%253EYour%2520payment%2520was%2520successful%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-action%2522%253E%250A%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520btn-icon%2522%250A%2520%2520%2520%2520%2520%2520onclick%253D%2522finesse.hideToastNotification%28%27%2523demo-toast%27%29%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-light&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520id%253D%2522demo-toast%2522%2520class%253D%2522toast%2520toast-success%2522%2520role%253D%2522dialog%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-icon%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-content%2522%2520role%253D%2522document%2522%253E%250A%2520%2520%2520%2520%253Cstrong%253EThank%2520You%253C%252Fstrong%253E%250A%2520%2520%2520%2520%253Csmall%253EYour%2520payment%2520was%2520successful%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522toast-action%2522%253E%250A%2520%2520%2520%2520%253Cbutton%250A%2520%2520%2520%2520%2520%2520class%253D%2522btn%2520btn-icon%2522%250A%2520%2520%2520%2520%2520%2520onclick%253D%2522enigma.hideToastNotification%28%27%2523demo-toast%27%29%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -79,14 +79,14 @@
       <div class="toast-action">
         <button
           class="btn btn-icon"
-          onclick="finesse.hideToastNotification('#demo-toast')"
+          onclick="enigma.hideToastNotification('#demo-toast')"
         >
           <i class="fas fa-times-circle"></i>
         </button>
       </div>
     </div>
 
-    <script src="/src/js/finesse.js"></script>
+    <script src="/src/js/enigma.js"></script>
     <script src="/docs/assets/scripts/custom-components.js"></script>
     <script src="/docs/assets/scripts/script.js"></script>
   </body>
