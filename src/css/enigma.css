@@ -723,6 +723,7 @@ form {
 
 .form-group {
   margin-block-end: var(--spacing-16);
+  position: relative;
 }
 
 .label {
@@ -750,7 +751,7 @@ form {
 .form-control-icon {
   position: absolute;
   margin-block: var(--spacing-6);
-  inset-inline-end: var(--spacing-16);
+  inset-inline-end: var(--spacing-0);
 }
 
 .form-control-icon + .form-control {
