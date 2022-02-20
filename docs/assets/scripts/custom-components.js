@@ -49,10 +49,17 @@ class Header extends HTMLElement {
               <ul
                 class="list list-inline list-items-gapped d-flex justify-content-flex-end"
               >
-                <li>
+                <!-- <li>
                   <button class="btn btn-icon">
                     <i class="fas fa-adjust"></i>
                   </button>
+                </li> -->
+                <li>
+                  <a
+                    class="btn btn-icon"
+                    target="_blank" href="https://github.com/anupkrbid/enigma-ui"
+                    > <i class="fab fa-github fa-2x"></i></a
+                  >
                 </li>
                 <li>
                   <button class="btn btn-primary" onclick="download()">Download</button>
@@ -67,10 +74,17 @@ class Header extends HTMLElement {
           class="nav-content d-flex justify-content-flex-end d-none-above-laptop-mini"
         >
           <ul class="list list-inline list-items-gapped">
-            <li>
+          <!-- <li>
               <button class="btn btn-icon">
                 <i class="fas fa-adjust"></i>
               </button>
+            </li> -->
+            <li>
+              <a
+                class="btn btn-icon"
+                target="_blank" href="https://github.com/anupkrbid/enigma-ui"
+                > <i class="fab fa-github fa-2x"></i></a
+              >
             </li>
             <li>
               <div class="dropdown" data-dropdown>
