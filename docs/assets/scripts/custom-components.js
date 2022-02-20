@@ -13,11 +13,11 @@ class Header extends HTMLElement {
             class="btn btn-icon ${this.hideSidebarTrigger(
               activeNav
             )} d-none-above-laptop-mini"
-            onclick="finesse.toggleSidebar('#sidebar')"
+            onclick="enigma.toggleSidebar('#sidebar')"
           >
             <i class="fas fa-bars"></i>
           </button>
-          <div class="nav-brand">Finess UI</div>
+          <div class="nav-brand">Enigma NI</div>
         </div>
 
         <!-- For Laptop and Above -->

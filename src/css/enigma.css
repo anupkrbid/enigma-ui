@@ -14,7 +14,6 @@ body {
 
 ::selection {
   background-color: var(--color-blue-200);
-  border-radius: var(--spacing-2);
 }
 
 .h0 {
@@ -686,6 +685,7 @@ picture {
 .image-responsive-container {
   position: relative;
   overflow: hidden;
+  object-fit: cover;
   block-size: var(--spacing-160);
   inline-size: var(--spacing-160);
   border-radius: var(--border-radius-2);

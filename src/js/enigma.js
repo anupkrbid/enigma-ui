@@ -1,4 +1,4 @@
-const finesse = {
+const enigma = {
   toggleSidebar: function (sidebarRef) {
     const element = document.querySelector(sidebarRef);
 
