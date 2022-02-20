@@ -853,6 +853,7 @@ picture {
 @media screen and (min-width: 30rem) {
   .modal-container {
     inline-size: 90%;
+    inset-block-start: 10%;
   }
 }
 
