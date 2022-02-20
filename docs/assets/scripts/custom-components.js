@@ -55,7 +55,7 @@ class Header extends HTMLElement {
                   </button>
                 </li>
                 <li>
-                  <button class="btn btn-primary">Download</button>
+                  <button class="btn btn-primary" onclick="download()">Download</button>
                 </li>
               </ul>
             </div>
@@ -98,7 +98,7 @@ class Header extends HTMLElement {
                       >
                     </li>
                     <li>
-                      <button class="btn btn-primary is-100">Download</button>
+                      <button class="btn btn-primary is-100" onclick="download()">Download</button>
                     </li>
                   </ul>
                 </div>

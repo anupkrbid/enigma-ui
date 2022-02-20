@@ -282,3 +282,30 @@ var cssArr = [
 ];
 
 console.log(cssArr.join("\n"));
+
+// // URL Hash Change Listener
+
+// function openModal(modalId) {
+//   // document.URL is the current url
+//   const urlObj = new URL(document.URL);
+//   urlObj.hash = "#" + modalId;
+
+//   // new url
+//   var newUrl = urlObj.href;
+
+//   // change the current url
+//   document.location.href = newUrl;
+//   // Note that this will not cause a reload of the page.
+// }
+
+// // event lister to handle modal open
+// window.addEventListener("hashchange", function () {
+//   // new hash value
+//   const hash = new URL(document.URL).hash;
+
+//   // Equivalent to hash.startsWith("#modal-")
+//   if (hash.indexOf("#modal-") === 0) {
+//     const modalRef = hash.substring("#modal-".length);
+//     document.querySelector(`#${modalRef}`).classList.add("modal-active");
+//   }
+// });
