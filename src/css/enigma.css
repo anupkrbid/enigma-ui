@@ -402,7 +402,7 @@ button {
 }
 
 .btn.btn-raised {
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
 }
 
 .btn.btn-float {
@@ -411,7 +411,7 @@ button {
   inset-inline-end: 10%;
   block-size: var(--spacing-48);
   inline-size: var(--spacing-48);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   z-index: 999;
   border-radius: var(--border-radius-round);
 }
@@ -550,7 +550,7 @@ button {
   inline-size: 100%;
 }
 .card.card-shadow {
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-md);
 }
 
 .card .card-img {
